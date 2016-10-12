@@ -1,0 +1,320 @@
+#line 1 "C:\TOTVS1~1\MICROS~1\PROTHEUS\INCLUDE\Protheus.ch"
+#line 1 "C:\TOTVS1~1\MICROS~1\PROTHEUS\INCLUDE\Dialog.ch"
+#line 28 "Protheus.ch"
+#line 1 "C:\TOTVS1~1\MICROS~1\PROTHEUS\INCLUDE\Font.ch"
+#line 29 "Protheus.ch"
+#line 1 "C:\TOTVS1~1\MICROS~1\PROTHEUS\INCLUDE\PTMenu.ch"
+#line 31 "Protheus.ch"
+#line 1 "C:\TOTVS1~1\MICROS~1\PROTHEUS\INCLUDE\Print.ch"
+#line 33 "Protheus.ch"
+#line 1 "C:\TOTVS1~1\MICROS~1\PROTHEUS\INCLUDE\Colors.ch"
+#line 35 "Protheus.ch"
+#line 1 "C:\TOTVS1~1\MICROS~1\PROTHEUS\INCLUDE\Folder.ch"
+#line 37 "Protheus.ch"
+#line 1 "C:\TOTVS1~1\MICROS~1\PROTHEUS\INCLUDE\msobject.ch"
+#line 38 "Protheus.ch"
+#line 1 "C:\TOTVS1~1\MICROS~1\PROTHEUS\INCLUDE\VKey.ch"
+#line 42 "Protheus.ch"
+#line 1 "C:\TOTVS1~1\MICROS~1\PROTHEUS\INCLUDE\WinApi.ch"
+#line 44 "Protheus.ch"
+#line 1 "C:\TOTVS1~1\MICROS~1\PROTHEUS\INCLUDE\FWCommand.ch"
+#line 47 "Protheus.ch"
+#line 1 "C:\TOTVS1~1\MICROS~1\PROTHEUS\INCLUDE\FWCSS.CH"
+#line 50 "Protheus.ch"
+#line 3 "c:\users\ERICK~1.LAN\desktop\ACDSIG~1\sigaacd1\sigaacd\imx46pe.prw"
+
+
+
+
+
+Function U_LOCXPE11()
+	If funName() == "MATA101N"
+		U_IMX46PEC()
+	end
+Return
+
+
+
+
+
+
+Function U_MT120BRW()
+	aAdd(aRotina, {"Finalizar", "U_IMX4601M(funName())", 0, 6, 0, nil})
+Return
+
+
+
+
+
+
+Function U_MA410MNU()
+	aAdd(aRotina, {"Finalizar", "U_IMX4601M(funName())", 0, 6, 0, nil})
+
+
+
+	aAdd(aRotina, {"Imp. Ped.", "MATR730()", 0, 1, 0, nil})
+Return
+
+
+
+
+
+
+Function U_MT120GOK()
+	Local	aSC7	:=	SC7->(GetArea())
+	Local	cSerie	:=	"RX"
+	U_IMX46PEB(cSerie, SC7->C7_NUM)
+	U_IMX46PEA(cSerie, funName())
+	RestArea(aSC7)
+Return
+
+
+
+
+
+Function U_MTA440C9()
+	Local	aSC5	:=	SC5->(GetArea())
+	Local	aSC9	:=	SC9->(GetArea())
+	Local	cSerie	:=	"PK"
+	U_IMX46PEB(cSerie, SC5->C5_NUM)
+	U_IMX46PEA(cSerie, funName())
+	dbSelectArea("SC5")
+	recLock("SC5", .F. )
+	SC5->C5_STACD	:=	"** NO **"
+	msUnlock("SC5")
+	SC5->(dbCommit())
+	restArea(aSC5)
+	restArea(aSC9)
+Return
+
+
+
+
+
+Function U_M469ITEM()
+	Local	aSC5	:=	SC5->(GetArea())
+	Local	cSerie	:=	"PK"
+	dbSelectArea("SC5")
+	If SC5->(dbSeek(xFilial("SC5") + SC6->C6_NUM))
+		U_IMX46PEB(cSerie, SC5->C5_NUM)
+		recLock("SC5", .F. )
+		SC5->C5_STACD	:=	""
+		msUnlock("SC5")
+		SC5->(dbCommit())
+	end
+	RestArea(aSC5)
+Return ( .T. )
+
+
+
+
+
+Function U_MA120E()
+	Local	expN1	:=	PARAMIXB[1]
+	Local	cSerie	:=	"RX"
+	Local	lResult	:= .F. 
+	If expN1 == 1
+		U_IMX46PEB(cSerie, SC7->C7_NUM)
+		lResult	:= .T. 
+	end
+Return (lResult)
+
+
+
+
+
+Function U_A410EXC()
+	Local	aSC5	:=	SC5->(GetArea())
+	Local	cSerie	:=	"PK"
+	If empty(SC5->C5_STACD)
+		U_IMX46PEB(cSerie, SC5->C5_NUM)
+	end
+	RestArea(aSC5)
+Return ( .T. )
+
+
+
+
+
+
+Function U_IMX46PEA(cSerie,cFuncion)
+	Local	aUsuario		:=	pswRet()
+	Local	cCampo1			:=	""
+	Local	cCampo2			:=	""
+	Local	cCampo3			:=	""
+	Local	cSerieOrigen	:=	""
+	Local	cFolioOrigen	:=	""
+	Local	cPrefijo		:=	""
+	Local	cTabla			:=	""
+	Local	cTime			:=	subStr(time(), 1, 5)
+	Local	dDate			:=	dDatabase
+	Local	nFolio			:=	0
+	Local	nStep			:=	0
+	If	cSerie == "RX"
+		cFolioOrigen	:=	SC7->C7_NUM
+		cPrefijo		:=	"C7_"
+		cTabla			:=	"SC7"
+	Else
+		cFolioOrigen	:=	SC9->C9_PEDIDO
+		cPrefijo		:=	"C9_"
+		cTabla			:=	"SC9"
+	end
+	nFolio := U_IMX4600F(cSerie)
+	dbSelectArea("SZ1")
+	RecLock("SZ1", .T. )
+	SZ1->Z1_FILIAL	:=	xFilial("SZ1")
+	SZ1->Z1_SERIE	:=	cSerie
+	SZ1->Z1_FOLIO	:=	nFolio
+	SZ1->Z1_SERORI	:=	cSerieOrigen
+	SZ1->Z1_DOCORI	:=	cFolioOrigen
+	SZ1->Z1_ST		:=	0
+	SZ1->Z1_FUNC1	:=	cFuncion
+	SZ1->Z1_UID1	:=	aUsuario[1, 1]
+	SZ1->Z1_UKEY1	:=	aUsuario[1, 2]
+	SZ1->Z1_UNAME1	:=	aUsuario[1, 4]
+	SZ1->Z1_FECHA1	:=	dDate
+	SZ1->Z1_HORA1	:=	cTime
+	If cSerie == "RX"
+		SZ1->Z1_CLIPRO	:=	SA2->A2_COD
+		SZ1->Z1_LOJA	:=	SA2->A2_LOJA
+		SZ1->Z1_NOMBRE	:=	SA2->A2_NOME
+	Else
+		SZ1->Z1_CLIPRO	:=	SA1->A1_COD
+		SZ1->Z1_LOJA	:=	SA1->A1_LOJA
+		SZ1->Z1_NOMBRE	:=	SA1->A1_NOME
+	end
+	MsUnlock("SZ1")
+	dbSelectArea("SZ2")
+	dbSelectArea(cTabla)
+	&(cTabla)->(dbSetORder(1))
+	&(cTabla)->(dbGoTop())
+	&(cTabla)->(dbSeek(xFilial(cTabla) + cFolioOrigen))
+	cCampo1	:=	cTabla + "->" + cPrefijo + "FILIAL"
+	cCampo2	:=	cTabla + "->" + iIf(cTabla == "SC7", "C7_NUM", "C9_PEDIDO")
+	while&(cCampo1)==xFilial(cTabla) .And. &(cCampo2)==cFolioOrigen
+		nStep	+=	1
+		RecLock("SZ2", .T. )
+		SZ2->Z2_FILIAL	:=	xFilial("SZ2")
+		SZ2->Z2_SERIE	:=	cSerie
+		SZ2->Z2_FOLIO	:=	nFolio
+		cCampo3			:=	cTabla + "->" + cPrefijo + "ITEM"
+		SZ2->Z2_ITEM	:=	val(&(cCampo3))
+		SZ2->Z2_ST		:=	0
+		cCampo3			:=	cTabla + "->" + cPrefijo + iIf(cTabla == "SC7", "PRECO", "PRCVEN")
+		SZ2->Z2_COSTO	:=	&(cCampo3)
+		cCampo3			:=	cTabla + "->" + cPrefijo + "LOCAL"
+		SZ2->Z2_DEPOT1	:=	&(cCampo3)
+		cCampo3			:=	cTabla + "->" + cPrefijo + "PRODUTO"
+		SZ2->Z2_COD1	:=	&(cCampo3)
+		SZ2->Z2_DESC1	:=	posicione("SB1", 1, xFilial("SB1") + &(cCampo3), "B1_DESC")
+		SZ2->Z2_UM1		:=	posicione("SB1", 1, xFilial("SB1") + &(cCampo3), "B1_UM")
+		cCampo3			:=	cTabla + "->" + cPrefijo + "LOTECTL"
+		SZ2->Z2_LOTE1	:=	iIf(cTabla == "SC7", criaVar("Z2_LOTE1"), &(cCampo3))
+		cCampo3			:=	cTabla + "->" + cPrefijo + iIf(cTabla == "SC7", "QUANT", "QTDLIB")
+		SZ2->Z2_CANT1	:=	&(cCampo3)
+		MsUnlock("SZ2")
+		&(cTabla)->(dbSkip())
+	End
+Return
+
+
+
+
+
+
+Function U_IMX46PEB(cSerie,cFolio)
+	Local	cSerieOrigen	:=	""
+	Local	cFolioOrigen	:=	cFolio
+	Local	nFolio			:=	0
+	Local	cQuery			:=	""
+	Local	cDatos			:=	"IMX46PEB"
+	cQuery	:=	" SELECT Z1_SERIE, Z1_FOLIO"
+	cQuery	+=	" FROM " + RetSqlName("SZ1")
+	cQuery	+=	" WHERE D_E_L_E_T_ = ' '"
+	cQuery	+=	" AND Z1_SERIE = '" + cSerie + "'"
+	cQuery	+=	" AND Z1_DOCORI = '" + cFolioOrigen + "'"
+	dbUseArea( .T. , "TOPCONN", tcGenQry(, , cQuery), cDatos, .T. , .T. )
+	If ! (cDatos)->(eof())
+		nFolio	:=	(cDatos)->Z1_FOLIO
+	end
+	(cDatos)->(dbCloseArea())
+	cQuery	:=	" UPDATE " + RetSqlName("SZ1") + " SET"
+	cQuery	+=	" D_E_L_E_T_ = '*'"
+	cQuery	+=	" WHERE	D_E_L_E_T_ = ' '"
+	cQuery	+=	" AND Z1_SERIE = '" + cSerie + "'"
+	cQuery	+=	" AND Z1_FOLIO = " + allTrim(str(nFolio))
+	If tcSqlExec(cQuery) < 0
+		conOut(tcSqlError())
+	end
+	cQuery	:=	strTran(cQuery, "Z1", "Z2")
+	If tcSqlExec(cQuery) < 0
+		conOut(tcSqlError())
+	end
+Return
+
+
+
+
+
+
+Function U_IMX46PEC()
+	Local	aSD1	:=	SD1->(getArea())
+	Local	aSC7	:=	SC7->(getArea())
+	Local	cTES	:=	superGetMv("MV_IMX4607", .F. , "301")
+	Local	cFilLoc	:=	SD1->D1_FILIAL
+	Local	cSerie	:=	SD1->D1_SERIE
+	Local	cFolio	:=	SD1->D1_DOC
+	Local	nQty	:=	0
+
+	SD1->(dbSetOrder(1))
+	SD1->(dbGoTop())
+	SD1->(dbSeek(cFilLoc + cFolio + cSerie))
+	while cFilLoc+cFolio+cSerie==SD1->D1_FILIAL+SD1->D1_DOC+SD1->D1_SERIE
+		If allTrim(SD1->D1_TES) == allTrim(cTES) .And.  !empty(SD1->D1_PEDIDO) .And.  !empty(SD1->D1_ITEMPC)
+			nQty	:=	cantidadSZ2(SD1->D1_PEDIDO, SD1->D1_ITEMPC)
+			SC7->(dbSetOrder(1))
+			SC7->(dbGoTop())
+			If SC7->(dbSeek(xFilial("SC7") + SD1->D1_PEDIDO + SD1->D1_ITEMPC))
+				recLock("SC7", .F. )
+				SC7->C7_QUJE	:=	nQty
+				msUnlock("SC7")
+				SC7->(dbCommit())
+			end
+		end
+		SD1->(dbSkip())
+	End
+	restArea(aSD1)
+	restArea(aSC7)
+Return
+
+Static Function cantidadSZ2(cPedido, cItem)
+	Local	cSerie	:=	"RX"
+	Local	cQuery	:=	""
+	Local	cDatos	:=	"IMX46PEC"
+	Local	nResult	:=	0
+
+	cQuery	:=	" SELECT Z1_FOLIO"
+	cQuery	+=	" FROM " + retSqlName("SZ1")
+	cQuery	+=	" WHERE D_E_L_E_T_ = ' '"
+	cQuery	+=	" AND Z1_SERIE = 'RX'"
+	cQuery	+=	" AND Z1_DOCORI = '" + cPedido + "'"
+	dbUseArea( .T. , "TOPCONN", tcGenQry(, , cQuery), cDatos, .T. , .T. )
+	If ! (cDatos)->(eof())
+		nResult	:=	(cDatos)->Z1_FOLIO
+	end
+	(cDatos)->(dbCloseArea())
+
+	If nResult > 0
+		cQuery	:=	" SELECT Z2_CANT2"
+		cQuery	+=	" FROM " + retSqlName("SZ2")
+		cQuery	+=	" WHERE D_E_L_E_T_ = ' '"
+		cQuery	+=	" AND Z2_SERIE = 'RX'"
+		cQuery	+=	" AND Z2_FOLIO = " + allTrim(str(nResult))
+		cQuery	+=	" AND Z2_ITEM = " + cItem
+		dbUseArea( .T. , "TOPCONN", tcGenQry(, , cQuery), cDatos, .T. , .T. )
+		If ! (cDatos)->(eof())
+			nResult	:=	(cDatos)->Z2_CANT2
+		end
+		(cDatos)->(dbCloseArea())
+	end
+Return (nResult)
