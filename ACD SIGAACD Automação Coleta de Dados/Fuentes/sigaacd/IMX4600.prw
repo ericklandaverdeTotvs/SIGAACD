@@ -26,7 +26,7 @@ User Function IMX4600(cArgs)
 	oApp:lIsBlind  := .T.
 	oApp:CreateEnv()
 	
-	//Define tamaño del diálogo y valores predeterminados.
+	//Define tamaño del diálogo y valores predeterminados. Hola marcos
 	VTSetSize(nMaxRow, nMaxCol)
 	TerProtocolo("VT100")
 	SetsDefault()
