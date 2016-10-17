@@ -1,0 +1,49 @@
+********************************************************************************************************************
+						ATENçÃO 
+********************************************************************************************************************
+- Favor verificar a documentação disponível no FTP (ftp://ftp.microsiga.com.br/handheld/SFACRM8/Doc/)
+- Esta atualização deve ser feita por um Analista da Microsiga
+********************************************************************************************************************
+
+01/02/2008
+
+- Melhorias na tela de cadastro de grupos/recriação de base
+- Disponibilizado atalho no monitor para acessar o wizard
+- Melhorias no Wizard
+- Todos os parametros e serviços que compõem o SFA podem ser configurados pelo wizard
+- Implementado trigger na atualização de parametros (através do wizard)
+- Implementado trigger no serviço de mensagens
+
+
+30/11/2007
+
+- Implementado serviço de Metas (função HHEXPSCT)
+- Implementado serviço de Consumo (função XEXPHCN)
+- Criado parâmetro para alterar a data de emissão dos pedidos no handheld para a data de entrada destes pedidos no Protheus (se MV_HHDTSC5 = .T. a data do pedido sera trocada)
+- Criado parâmetro para que os serviços genéricos sejam executados somente uma vez por dia, quando o JOB for ativado (Para ativar, preencher o parâmetro MV_HHSRGEN com a data atual)
+- Implementado sistema para liberação automatica de usuarios bloquados por inconsistências durante o JOB, se for habilitado, cada vez que for encontrado um usuario bloqueado, o sistema ira recriar a base do mesmo, e liberá-lo para novas conexões (informar HHLAUTO = 1 no mp8srv.ini)
+- Implementado mensagens de status no monitor do Mobile, informando pontualmente quantos usuários estão em sincronismo, em JOB, processando importação, bloqueados, etc
+- Criado parâmetro para não exportar clientes bloqueados (MV_SFA1BLQ = N não exporta)
+- Criado parâmetro para não exportar produtos bloqueados (MV_SFB1BLQ = N não exporta)
+
+27/06/2007
+
+- Padronização dos serviços de exportação e importação
+- Criação de novos pontos de entrada nos serviços
+- Implementado tratamento para multiplas filias na geração do script
+
+02/09/2005
+
+- As rotinas para utilização do SFA com a geração de arquivos no Banco de Dados
+
+18/10/05
++++++++++++++++++++++++++++++++++++++
+- Obrigatorio atualizacao do MCS para utilizar este PAT
++++++++++++++++++++++++++++++++++++++
+- Alteração na estrutura da tabela HCADTBL, criação do campo HHT_SHARE
+- Exclusão da tabela HHGEN
+- Alteração de estrutura das tabelas ADV_TBL, ADV_IND e HHCTR
+- Criação da tabela ADV_COLS
+- Inclusão do conceito de tabelas Exclusiva e compartilhadas, isso implica no ajuste do SX2 das tabelas H* em relação as tabelas do Prothues. Exemplo: Se a tabela SA1 estiver compartilhada a HA1 também deverá estar.
+- Alteração dos fontes de serviços e gatilhos
+

@@ -1,0 +1,225 @@
+Palm OS 5 simulator usage notes / brain dump
+
+Author:			Patrick Porlan
+Last revision:		December 7, 2001
+Product revision:	5.0.0.3
+
+______________________________________________________________________________
+
+1-  Foreword
+
+This documents summarizes the information that developers will need in order
+to take advantage of the Palm OS 5 simulation tools.
+
+
+______________________________________________________________________________
+
+2-  Introduction
+
+The goal of this tool is to enable developers to run and test their
+applications on a preliminary release of the upcoming Palm OS 5 to give them
+time to make their applications fully Palm OS 5 compatible.
+
+Since most of Palm OS 5 code is shared between the simulation and the actual
+ARM-based devices, running a Palm OS application in the simulator gives a
+significant glimpse on how this application will behave when run on an actual
+Palm OS 5, ARM-based device.
+
+The simulation itself is made of a set of Palm OS components either recompiled
+to run directly on ix86 processors or provided in 68000 form and executed
+through the Palm Application Compatibility Environment (PACE) which is
+included in Palm OS 5. Third-party applications run in PACE.
+
+
+______________________________________________________________________________
+
+3-  What's provided
+
+The ROM file is a special "x86" ROM that doesn't include code for the native
+Palm OS 5 components. It does include all Palm OS resources, data and 68000
+components however.
+
+The executable file is the entry point for the simulation. It is responsible
+for booting up the Palm OS simulation and handling its UI.
+
+The DLLs are necessary simulation components but the developers should not
+have to worry about them. For the record, lets notice that they simulate the
+Palm OS components that will run natively on ARM processors - including PACE.
+
+
+______________________________________________________________________________
+
+4-  Key mapping
+
+The UI is vastly mouse (pen) driven. There are a few important keys to know
+however:
+
+esc       -> power key
+page up   -> up key
+page down -> down key
+F1 to F4  -> applicative hard keys
+F5        -> toggles cursor coordinates reporting on or off
+pause/attn-> simulates a shortcut .. stroke. The user can then *draw* a
+             number or character sequence
+
+
+Control Keys:
+
+Control+A Displays the menu
+Control+C Command character
+Control+D Confirmation character.
+Control+E Displays the application launcher
+Control+F Displays the onscreen keyboard
+Control+I Jump to the Find Dialog
+Control+K Jump to the Calculator app
+Control+M Enters a linefeed character
+Control+N Jumps to the next field
+Control+P Jumps to the previous field
+Control+R Does a soft reset
+Contorl+Shift+R Does a hard reset
+Control+S Automatic off character
+Control+Pause Enters the 68K debugger
+
+The following shortcuts are not supported by the NT Simulator:
+Control+B Low battery warning
+Control+T Sets or unsets hard contrasts
+Control+U Turns backlighting on or off
+
+
+Most others keys can be used to input text while a field is active.
+
+
+______________________________________________________________________________
+
+5-  Resets
+
+The simulation typically performs a clean (hard) reset when it is started.
+Both soft and hard resets can be preformed through the simulator's menu,
+which is accessible through a right-click. This allows changing a variety of
+settings that are saved in a configuration file.
+
+
+______________________________________________________________________________
+
+6-  State information
+
+All state information is preserved through the PalmSim.ini file, which is
+located in the same folder as the PalmSim.exe executable.
+
+Nothing is stored in the registry.
+
+ROM - string - rom file name - ex: NTFull_enUS.rom - default: ""
+
+RAM - integer - RAM allocated to storage memory, in KB - ex: 1024 - default: 256
+
+Sound - boolean - whether or not sound can be output - ex: on - default: off 
+
+StorageProtection - boolean - whether or not attempts to corrupt the storage memory should raise a protection fault - ex: on - default: off, for speed reasons
+
+Zoom - integer - magnification level (from 1 to 4) - ex: 1 - default: 2
+
+BitDepth - integer - boot depth used at boot-time, expressed in bits per pixel (1,2,4,8 or 16) - ex: 16 - default: 8
+
+AppCreator - 4 characters sequence - creator of the application to start at reset - ex: lnch - default: (none)
+
+DebugThroughTCP - boolean - whether the communication with external 68K debuggers should go through tcp or serial link - ex: on - default: on
+
+AlwaysOnTop - boolean - whether the simulation window should always be at the top of the windows z-order - ex: off - default: off
+
+WindowOriginX - integer - x coordinate of the simulator window at startup time - ex: 10 - default: 0
+
+WindowOriginY - integer - y coordinate of the simulator window at startup time - ex: 10 - default: 0
+
+CradlePort - string - name of the comm port to use for serial communication (cradle connector) - ex:COM1 - default: first available serial port
+
+InfraredPort - string - name of the comm port to use for ir communication - ex:COM2 - default: None
+
+InfraredPortType - string - whether the IR device connected to the port to use for IR is the cradle, a jet-eye device, or something else - ex: JetEye device - default: (none)
+
+AdditionalPorts - string - comma-separated list of serial ports usable within the simulation - ex:COM3,COM4 - default: (none)
+
+TraceTarget - string - tracer type and target - ex: tcp:localhost:25598 or file:traces.txt
+
+LogErrorMessages - boolean - whether to log error messages to errorlog.txt - default: off
+
+______________________________________________________________________________
+
+7-  Command line
+
+All parameters that can be set through the configuration file can also be set
+through the command line. If a parameter is specified through the command line,
+the value stored in the configuration file is ignored and will actually be
+overwritten with the command-line specified value when the simulator quits.
+
+The keyword themselves are not case-sensitive but their values are.
+
+As an example, simulation.ini may contain the following line:
+AppCreator=lnch
+
+If the user specified -appcreator:memo in command-line, the 'memo' value will
+be used and retained for future runs of the simulator.
+
+______________________________________________________________________________
+
+8- Switching ROMs
+
+Holding down the shift key when the simulation starts will display the ROM
+selection dialog, which is normally displayed only if no ROM has been
+specified in the configuration file or through the command line.
+
+This is not a troubleshooting mode however, and won't prevent the simulation
+from behaving inpredictably if simulation.ini is corrupted or contains
+inconsistent data.
+
+
+______________________________________________________________________________
+
+9- Menu
+
+(under development)
+
+______________________________________________________________________________
+
+10-  AutoRun, AutoLoad, AutoRunAndQuit, drag & drop
+
+PRC, PDB and PQA files can be imported into the storage memory area through
+drag and drop, or special folders that can be created in the folder where the
+simulation binaries are located.
+
+
+______________________________________________________________________________
+
+12- Skins
+
+No skin support is available in this release of the simulator.
+
+
+______________________________________________________________________________
+
+11- Sessions
+
+The storage content can be saved for future reuse, but reloading a storage
+memory image this requires soft-resetting the device. This is not equivalent
+to POSE session files.
+
+______________________________________________________________________________
+
+12- Storage viewer
+
+Holding shift while clicking on a database name will copy the content of this
+database as text in the clipboard, performing a concatenation of all its
+records. This is mainly useful for application that log strings into record
+databases.
+
+The record/resource dump is made of three columns: offset in record, hex data,
+ascii data. Holding the shift key when the record/resource is selected will
+cause the offset column to be filled with the absolute addresses of the data
+bytes instead of their offset in the record.
+
+______________________________________________________________________________
+
+13- Miscellaneous
+
+Holding the shift key when the simulator's about dialog is invoked will print
+the simulator executable's construction date & time.
+

@@ -1,0 +1,91 @@
+29/07/2011 - Versão 12068
+-Alterado fonte SFCL002 para adicionar o botão "Tipo de cliente" ao ponto de entrada SFACL001. 
+
+18/03/2011 - Versão 12066
+-Alterado o fonte SFPV105 para que aplique a regra de desconto por item com a verificação de intervalo de datas e horas.
+
+20/01/2011 - Versão 12066
+-Alterado o fonte SFPV103 para que arredonde o valor pelo numero de casas decimais corretamente caso utilize mais de 2 digitos após a virgula.
+
+02/09/2010 - Versão 12065
+-Aletrado os fontes para fazer o calculo de desconto no cabeçalho (DESC1,DESC2,DESC3,DESC4) na tela de pedido 1
+
+02/08/2010 - Versão 12064
+-Alterado campo para apresentar o valor correto após aplicação de desconto.
+-Alterado label de CGC para CNPJ
+
+-Adicionado ponto de entrada SFPV106, executado logo apos escolha da forma de pagamento.(descrição do ponto de entrada no TDN)
+
+21/08/2009 - Versão 12060
+
+-Alterada interface grafica
+
+
+
+*************************************
+13/05/2009 - Versão 12058
+-Alterado o ponto de entrada SFAVN002, para inclusão do objeto oBtnGeraPed como mais um parâmetro o que permitirá o cliente inibir o botão de cópia do pedido de vendas.
+
+-Alterado a função PVC ALCDESC, apenas para passar o último parâmetro que estava faltando e ocasionava não conformidade ao selecionar o botão de desconto.
+
+-Atualizado os fontes de gravacao e importação de pedidos com bonificação.
+
+
+09/04/2009 - Versão 12056
+-Habilitada a tela de pedido v.2 (simplificada), utilizando parametro MV_SFATPED com valor igual a 2.
+-Movimentação no grid com as teclas Up/Down para Palm que não possuem função de Touch
+
+
+13/10/2008 - Versão 12050
+- Ao limpar desconto do item retornar o preço de venda do produto.
+- Implementado novo indicador para levantamento de clientes atendidos, na tela de Fechamento do Dia -> Resumo do Dia -> Positivados.  
+- Validar a diferença de preços de acordo com o desconto máximo.
+- Limpar o TES ao trocar o produto no item do pedido .
+- Validação da regra de desconto ao informar quantidade via teclado.
+- Acrescentados os índices por NOME e por CGC no folder de transportadora.
+- Implementado parametro para bloqueio de tabela de preço (MV_SFBLTBP)
+- Verificar se o CNPJ ja existe em um cliente do SFA.
+
+
+01/02/2008 - Versão 12040
+
+- Tratamento de preenchimento do desconto, e preço de venda ajustado ao funcionamento do SIGAFAT
+- Regras de desconto aplicadas na digitação do pedido de venda
+- Implementado sistema de relevancia de regras
+- Ajustes na tela de Confirmação de pedido, para considerar descontos informados
+- Implementado parâmetro (MV_SFBLTBP) para bloqueio de tabela de preço
+
+30/11/2007 - Versão 12030
+
+- Implementado tratamento para utilização de mais casas decimais nos campos de valor (as configurações serão buscadas do dicionario)
+- Criado sistema de bloqueio de pedidos no SFA (para habilitar deve ser configurado o parametro MV_SFBLPED com "T")
+- Implementado o serviço de Metas
+- Implementado o serviço de Consumo
+- Criado parametro para esconder o campo de desconto do item (MV_BLOQDSC)
+- Criado parametro para esconder o folder de desconto do cabeçalho (MV_SFLDDES)
+- Disponibilizado sistema para alertar o usuario do SFA quando o sincronismo for parcial, evitando que o usuario fique com status de sincronismo parcial na retaguarda
+- Otimizada a consulta padrao no SFA, que apresentava lentidão em alguns cadastros
+
+
+02/08/2007 - Versão 12020
+
+- Disponibilizados novos pontos de entrada (consultar DEM para maiores detalhes)
+- Criado botão de Visualizar pedidos
+- Implementado peso do item do pedido (de acordo com o parametro MV_SFAPESO)
+
+
+20/04/2007 - Versão 12010
+
+- Inclusão de parametro (MV_SFAMDTE) para permitir ou não Manipular a data de entrega
+- Implementado botão de produtos similares
+- Inclusão de Pto de Entrada (SFAPD001) para desenvolver tela de consulta de produto customizada 
+- Inclusão de Pto de Entrada (SFAPD002) para adicionar campos na tela de produtos modelo 2 
+- Melhoria no função de Fechamento do dia 
+- Implementado tratamento para permitir tabelas com compartilhamento entre empresas 
+- Melhoria para permitir utilização de regra de desconto por Grupo de Vendas 
+- Alteração visando contemplar ajuste sinief (numeração de notas e titulos)
+
+
+**************************
+* Versão Inicial = 12000 *
+**************************

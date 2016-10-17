@@ -1,0 +1,448 @@
+19/10/2010 - 4.40.00
+
+- Atualização de bibliotecas
+- Correção na atribuição de array
+- Inclusão de funções para captura e envio de imagem (Windows Mobile)
+- Melhoria nas funções de conexão (Windows Mobile)
+
+Obs.: As DLLs para a plataforma ARM não sofreram alterações e continuam iguais a versão do compilador de 13/06/2008 - 4.30.086.
+
+
+29/05/2009 - 4.30.090
+
+- Atualização de bibliotecas
+- Correção da passagem de variáveis por referência
+- Melhoria na função SET DEVICE TO PRINT
+
+Obs.: As DLLs para a plataforma ARM não sofreram alterações e continuam iguais a versão do compilador de 13/06/2008 - 4.30.086.
+
+13/04/2009 - 4.30.089
+
+- Atualização de bibliotecas
+- Correção da passagem de variáveis por referência
+- Correção na função SetFocus
+- Correção no objeto Listbox
+
+Obs.: As DLLs para a plataforma ARM não sofreram alterações e continuam iguais a versão do compilador de 13/06/2008 - 4.30.086.
+
+09/02/2009 - 4.30.088
+
+- Correção no sincronismo, parte de atualização
+
+Obs.: As DLLs para a plataforma ARM não sofreram alterações e continuam iguais a versão do compilador de 13/06/2008 - 4.30.086.
+
+14/11/2008 - 4.30.087
+
+- Correções na geração biliotecas (DLL)
+- Correção da função Val
+- Correção na utilização da função Syncdate em pontos de entrada
+
+Obs.: As DLLs para a plataforma ARM não sofreram alterações e continuam iguais a versão do compilador de 13/06/2008 - 4.30.086.
+
+13/06/2008 - 4.30.086
+
+- Correções na geração de SharedLib (SO)
+- Tradução das mensagens de erro e de sincronismo
+- Implementação das funções SetErrorLang, para definição do idioma das mensagens de erro/sincronismo.
+
+18/03/2008 - 4.30.084
+
+- Implementação das funções Beep, SetTimerInt
+- Correção no objeto Timer
+
+12/02/2008 - 4.30.083
+
+- Implementação de retorno na função DoSync
+- Melhoria na exibição de mensagens no DoSync
+- Correção na função SetListRow na criação de objetos (PALMOS 5.x)
+- Correção na utilização de objetos em pontos de entrada
+
+23/11/2007 - 4.30.081
+
+- Correção na geração de DLL, tratamento de retorno com separador zero binário
+- Correção na edição de célula no objeto Grid, apenas para aplicações WIN32
+
+07/11/2007 - 4.30.080
+
+- Melhoria na geração de DLL, tratamento de retorno com separador zero binário
+- Melhoria no Sincronismo: Opção de sincronismo em erro de execução
+- Correção no Sincronismo: Mensagem de erro e opção de reconexão no momento de sincronismo parcial
+- Correção na carga de imagens inexistenstes na DLL
+
+05/10/2007 - 4.30.079
+
+- Inclusão da função SetListRow, para atualização de objetos Combobox e Listbox
+- Correção da função SelectDate para emulador Win32
+- Correção na geração de DLL para não exibição de interface
+- Inclusão de funções para manutenção de configurações de Conexão (PALMOS 5.x)
+- Inclusão de funções para manutenção de configurações de Rede (PALMOS 5.x)
+
+02/08/2007 - 4.30.077
+
+- Inclusão de DLLs de runtime, ARMV4iSTD para utilização em Smartphones (Equipamentos sem TouchScreen)
+- Versão para utilização do eAdvpl com SmartPhones (Equipamentos sem TouchScreen), utilizar compilação ARMV4
+- Homologação de equipamentos com Windows Mobile 5.0 
+- Função IsTouch, determina se o equipamento possui a características de TouchScreen
+
+23/07/2007 - 4.30.076
+
+- Inclusão de DLLs de runtime, ARMv4i para utilização em Smartphones (Equipamentos sem TouchScreen)
+- Versão Beta 2 para utilização do eAdvpl com SmartPhones (Equipamentos sem TouchScreen)
+- Função IsTouch, determina se o equipamento possui a características de TouchScreen
+
+29/06/2007 - 4.30.075
+
+- Versão Beta para utilização do eAdvpl com SmartPhones (Equipamentos sem TouchScreen)
+- Função IsTouch, determina se o equipamento possui a características de TouchScreen
+- Correção na função Set Key (PocketPC)
+- Alteração do posicionamento do atalho para o teclado virtual (PocketPC)
+- Função Execute, possibilita a chamada de aplicações externas (PocketPC)
+
+19/06/2007 - 4.30.073
+
+- Versão Beta para utilização do eAdvpl com SmartPhones (Equipamentos sem TouchScreen)
+- Função IsTouch, determina se o equipamento possui a características de TouchScreen
+
+24/05/2007 - 4.30.072
+
+- Para utilização desta versão do compilador é necessário instalar o pacote de bibliotecas da Microsoft (vcredist_x86.exe) - http://www.microsoft.com/downloads/details.aspx?familyid=200B2FD9-AE1A-4A14-984D-389C36F85647&displaylang=en
+- Correção do tratamento de objetos para PalmOs 3.5.x
+- Correção na função RegisterArray (PalmOS)
+
+17/05/2007 - 4.30.071
+
+- Para utilização desta versão do compilador é necessário instalar o pacote de bibliotecas da Microsoft (vcredist_x86.exe) - http://www.microsoft.com/downloads/details.aspx?familyid=200B2FD9-AE1A-4A14-984D-389C36F85647&displaylang=en
+- Correção da operação de sincronismo para a versão SEM COLS (Modelo 6)
+- Inclusão de funções de Registro (PocketPC)
+- Correção na exibição de mensagens de erro
+
+07/03/2007 - 4.30.068
+
+- Atualização dos fontes do eDemo
+- Inclusão da função GetSerial
+- Correção na exibição de mensagens de erro
+
+23/11/2006 - 4.30.067
+
+- Correção na função RegisterArray
+- Correção na criação de Menus (PALMOS)
+
+14/11/2006 - 4.30.066
+
+- Inclusão das funções RegisterArray, RestoreArray, RegisterExit, ExecDumpArray, LastFldFocus.
+  Verificar o Guia de Referência
+- Correção na pintura das linhas do objeto Browse
+
+31/10/2006 - 4.30.065
+
+- Inclusão das funções Left, Right
+- Atualização do Guia de Referência eAdvpl
+- Correção da criação de objeto Browse
+
+25/10/2006 - 4.30.064
+
+- Atualização de arquivos de include
+
+23/10/2006 - 4.30.064
+
+- Verificação da biblioteca de compactação (ZLIB) no PocketPC
+- Correção das funções de Disable/Enable, Hide/Show para obejtos no PalmOS
+
+11/10/2006 - 4.30.063
+
+- Correção da picture
+
+11/09/2006 - 4.30.062
+
+- Correção da função Len, quando utilizado com campos
+
+05/09/2006 - 4.30.061
+
+- Inclusão das funções IsDigit, IsAlpha, StrTran
+
+29/08/2006 - 4.30.060
+
+- Correção na atualização de tela (PocketPC)
+- Correção no separador de colunas no obejto Browse (PocketPC)
+
+25/08/2006 - 4.30.059
+
+- Correção no alinhamento de memória
+
+23/08/2006 - 4.30.058
+
+- Atualização da LIB para PalmOS
+
+22/08/2006 - 4.30.057
+
+- Otimização na estrutura de gravação do dados para PocketPC
+
+17/07/2006 - 4.30.056
+
+- Correção na estrutura de gravação do dados para PocketPC
+- Correção SetText para dialogos
+- Utilização do sistema de arquivos NVFS para PalmOS, exceto a versão 5.4.7
+- Para sistema operacional, Windows Mobile 5.0, utilizar a chave de compilação ARMV4
+
+22/06/2006 - 4.30.055
+
+- Atualização de includes
+
+19/06/2006 - 4.30.054
+
+- Melhoria na integridade da base, para pocketPC
+- Melhoria na desconexão do sincronismo
+- Correção da rotina para PalmOS, com sistema de arquivo NVFS
+- Correção da utilização do separador decimal, pocketpc
+- Correção na função Val, para utlização de separador de milhar
+
+18/05/2006 - 4.30.052
+
+- Atualização de executáveis do compilador
+
+17/05/2006 - 4.30.051
+
+- Correção no browse quando se clicava nos botões de navegação
+- Melhoria de performance na operação off-line do sincronismo
+- Melhoria na gravação dos dados na carga inicial (PocketPC)
+- Melhoria na atualização de telas (POCKETPC)
+- Alteração do momento de atualização de controles de transmissão
+- Atualização do Selfinst (POCKETPC)
+- Inclusão do evento de ONCHANGE no objeto GET. 
+  **** Esta modificação implica na atualização obrigatória, seguindos os passso
+	1 - MCS Server
+	2 - Atualização do SelfInst
+	3 - Atualização do RunTime (DLL) e do executável (EXE)
+  ****
+
+19/04/2006 - 4.30.050
+
+- Correção da função LEN na utilização de constantes
+- Melhoria de performance na operação off-line do sincronismo
+- Melhoria na gravação dos dados (PocketPC)
+
+10/04/2006 - 4.30.049
+
+- Liberação da utilização do sistema operacional WindowsCE .NET
+- Melhorias no sincronismo para dispositivos com PALMOS 5.4.x
+
+17/03/2006 - 4.30.048
+
+- Alteração na utilização do RAS para PocketPC
+- Correção na utilização do Set Century
+
+17/02/2006 - 4.30.047
+
+- Correção na criação de chaves com campo Data
+- Inclusão da rotina Mathlib. PARA A UTILIZAção deste COMPILADOR o arquivo MATHLIB.PRC DEVE SER INSTALADO NOS DISPOSITIVOS COM O SISTEMA OPERACIONAL PALMOS JUNTAMENTE COM A APLICAçÃO
+
+03/02/2006 - 4.30.046
+
+- Implementação do uso de pontos de entrada
+- Correção na função DTOC para respeitar o SET CENTURY
+- Correção Sortarray para ordem descendente
+
+21/11/2005 - 4.30.045
+
+- Correção de foco no PalmOS 5.4
+
+25/11/2005 - 4.30.044
+
+- Correção na atualização de campos que pertencem a chave
+- Liberação da função dbPack()
+
+17/11/2005 - 4.30.043
+
+- Correção do comando SET KEY no objeto LISTBOX para PalmOS
+- Correção do controle de bitmaps para PocketPC
+- Inclusão do comando SET LIST ROW, que seleciona uma linha no objeto LISTBOX, apenas para PalmOS
+- Liberação dos Códigos de Barra tipo Interleave 2 OF 5
+
+11/11/2005 - 4.30.042
+
+- Correção do comando HideControl na ativação da janela
+
+09/11/2005 - 4.30.041
+
+- Atualização das bibliotecas do compilador
+- Correção da navegação do objeto DBBrowser
+- Correção do comando HideControl em objeto no Folder
+- Atualização para utilização do Sistema Operacional Windows Mobile 2003
+- Inclusão do comando Set Active Folder
+
+16/09/2005 - 4.30.039
+
+- Melhoria na rotina de compactação para Palm
+
+05/09/2005 - 4.30.038
+
+- Correção na função GridRow
+- Correção na função syncdate
+
+02/09/2005 - 4.30.037
+
+- Melhoria na McSync, no retorno de dados
+
+15/08/2005 - 4.30.035
+
+- Correção na utilização do leitor do código de barra (PalmOS)
+- Correção na função GridSetCellColor (PalmOS)
+
+05/08/2005 - 4.30.034
+
+- Atualização do Selfinst (Atualização remota) para POcketPC
+- Correação na Atualização remota para POcketPC
+
+04/08/2005 - 4.30.033
+
+- Atualização do client do MCS
+- Correção na utilização de bitmaps externos
+- Melhoria na discagem para PocketPC
+- Correção da compilação sem debug (opção -g)
+- Atualização das bibliotecas para PalmOS 3.5
+
+20/07/2005 - 4.30.032
+
+- Atualização do client do MCS
+
+13/07/2005 - 4.30.031
+
+- Correções na utilização do DBBrowse
+- Correção da picture, quanto utilizado o comando SetText
+- Correção no Retorno da chamada RPC
+- Inclusão de Bitmap para inicio do sincronismo
+- Possibilidade de utilização dos Bitmaps, verificar na pasta bmp quais estão disponíves
+
+08/07/2005 - 4.30.030
+
+- Correção na string retornada pelo AllTrim
+- Correção no Refresh do grid, quando utilizado o SetCellGridColor
+
+07/07/2005 - 4.30.029
+
+- Função SLEEP(<ntime>), para o processamento por determinado perído, ntime em milisegundos 
+- Função SyncDate, retorna a data do último sincronismo
+- Correção na desativação do objeto TIMER
+
+05/07/2005 - 4.30.028
+
+- Atualização do client do MCS
+
+04/07/2005 - 4.30.027
+
+- Atualização do client do MCS
+- Correção na criação de dialogos com várias funções
+- Correção da reorganização do indice quando um registro deletado tinha chave iguais
+
+23/06/2005 - 4.30.026
+
+- Atualização do client do MCS, correção da utilização do comando DELETE no script
+- Correção na utilização da opção Multiline no objeto GET
+
+23/06/2005 - 4.30.025
+
+- Atualização do client do MCS
+
+06/06/2005 - 4.30.024
+
+- Atualização do client do MCS
+
+03/06/2005 - 4.30.023
+
+- Atualização do client
+- Compilação de bitmaps no PalmOs
+
+17/05/2005 - 4.30.022
+
+- Atualização do client
+
+09/05/2005 - 4.30.021
+
+- Correção na atualização de registros, é recomendado recriar as bases do Palm/Pocket
+- Alteração no modelo da Base para PocketPC. Esta mudança altera o nome da pasta dados de DATA para DB e a pasta ficará localizada no mesmo caminho do executável. Será obrigatório recriar as bases.
+
+
+12/04/2005 - 4.30.020
+
+- Correção na função STR() na conversão de números negativos
+
+07/04/2005 - 4.30.019
+
+- Alteração na função DoSync para utilização de parâmetros
+
+04/03/2005 - 4.30.018
+
+- Correção da desconexão do sincronismo, cliente do MCS
+- Correção da função StrZero
+
+18/02/2005 - 4.30.017
+
+- Correção da desconexão para PocketPC
+- Correção na criação de indices no handheld, quando havia espaço na expressão de indice
+
+14/02/2005 - 4.30.016
+
+- Inclusão da seleção de conexão para PocketPC
+- Correção da compilação da função DoSync
+- Inclusão do filtro utilizando valor
+
+11/02/2005 - 4.30.015
+
+- Inclusão da opção de compilação para Windows CE .NET
+- Liberação das funções MoveControl, ResizeControl
+- Correção de arredondamento para GETs sem picture
+- Correção da função ShowControl para objetos de Folder
+- Na função DoSync() foram disponibilizados os parâmetros para Multi empresas
+
+28/01/2005 - 4.30.014
+
+- Correção na atualização de registros
+- Correção da transmissão de datas utilizando ODBC
+
+26/01/2005 - 4.30.013
+
+- Correção na criação de indices
+- Correção do comando SET DECIMAL
+- Correção de arredondamento na conversão de caracter para numérico, o padrão utilizado é 2 casas decimais.
+
+
+11/01/2005 - 4.30.012
+
+**** É obrigatório recriar a base dos equipamentos que utilizam PocketPC
+
+- Correção na reindexação das tabelas
+- Inclusão das funções Asc, Pad, PadR, PadL
+- Operador Mod (%)
+
+10/12/2004 - 4.30.010
+
+- Melhoria na reindexação das tabelas na exclusão de registros
+
+09/12/2004 - 4.30.009
+
+- Utilização da Flag DBPACK = ON/OFF, pelo client do MCS
+- Correção na função GridSetCellColor para plataforma Windows/PocketPC
+
+07/12/2004 - 4.30.007
+
+- Melhoria na Performance no Client MCS
+
+03/12/2004 - 4.30.006
+
+**** É obrigatório a atualização PAT do Protheus
+**** É obrigatório a atualização MCS versão 6.0.0 de 01/12/2004
+
+- Melhoria na Performance no Client MCS
+- Função NoRound -> para truncamento de números
+- Alteração do retorno da função Select para verificação se o algum Alias está aberto
+
+12/11/2004 - 4.30.005
+
+**** Para utilizar esta versão é obrigatório a utilização do Compilador de 12/11/2004
+**** É obrigatório a atualização PAT do Protheus
+
+- Melhoria na Performance no Client MCS
+- Possibilidade de geração de DLL / SO - Requisitos Visual Studio ou GCC
+- Função TIMER
+- Homologação da impressora Citizen CMP-10 para impressão e leitora de cartão
+
