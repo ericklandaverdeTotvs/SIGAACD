@@ -1,0 +1,2 @@
+[HotSyncNew-sync] IrLib.c, Line:573, Cannot open infrared port in background (may be busy).
+[Blazer] F:\PalmOS\5_4_9-A\Core\Emul68K\SrcSlowEmu\Run68K.c, Line:2210, Invalid write to FFFFFB9A
