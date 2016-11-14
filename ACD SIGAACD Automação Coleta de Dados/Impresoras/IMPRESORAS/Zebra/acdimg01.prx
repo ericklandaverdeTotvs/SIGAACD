@@ -13,7 +13,7 @@ Padrao Zebra
 ±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±
 ßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßß
 */
-User Function Img01 //Identificacao de produto
+User Function Img01 //Identificacao de produto ZDesignerZM600
 Local cCodigo,sConteudo,cTipoBar, nX
 Local nqtde 	:= If(len(paramixb) >= 1,paramixb[ 1],NIL)
 Local cCodSep 	:= If(len(paramixb) >= 2,paramixb[ 2],NIL)
@@ -63,7 +63,7 @@ For nX := 1 to nCopias
 		cCC      := CB0->CB0_CC
 		cLocOri  := CB0->CB0_LOCORI
 		cOPReq	:= CB0->CB0_OPREQ
-		cNumserie:= CB0->CB0_NUMSER		
+		cNumserie:= CB0->CB0_NUMSER
 		cOrigem  := CB0->CB0_ORIGEM
 		cEndereco:= CB0->CB0_LOCALI
 		cPedido  := CB0->CB0_PEDCOM
