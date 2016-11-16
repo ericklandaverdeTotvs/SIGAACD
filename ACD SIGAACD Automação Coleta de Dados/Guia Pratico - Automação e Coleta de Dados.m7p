@@ -1,0 +1,571 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xml version="8.0" projectid="{8D4315E2-A8F1-435D-BBE2-2F8299953B41}">
+  <targets>
+    <target scanner="{3DD0C05C-F5B5-44FD-A77A-8E832CC25300}" enabled="True" visible="True">
+      <options>
+        <pages2localize>1-3</pages2localize>
+        <output_format>0</output_format>
+        <protection_option>0</protection_option>
+        <optimization_method>2</optimization_method>
+        <encodings>
+          <native_encoding>
+            <code>en</code>
+            <encoding/>
+          </native_encoding>
+          <output_language_list>
+            <language>
+              <code>es</code>
+              <encoding/>
+            </language>
+          </output_language_list>
+        </encodings>
+        <output_lang_delimiter/>
+        <filename>Guia Pratico - Automação e Coleta de Dados.pdf</filename>
+        <output_settings>
+          <output_coding>ISO</output_coding>
+          <output_directory/>
+          <embedding>False</embedding>
+          <file_type>localized</file_type>
+          <output_type>subdirectory</output_type>
+        </output_settings>
+      </options>
+      <stringdata>
+        <row name="PDF.Info.Author" status="new">
+          <native>&quot;Isaias Florencio da Silva&quot;</native>
+          <lang id="es" status="auto">&quot;Isaias Florencio da Silva&quot;</lang>
+        </row>
+        <row name="PDF.Page[   1].Text[1].Text" status="new">
+          <native>&quot;Guia do Módulo Automação em Coleta de Dados - SIGAACD&quot;</native>
+          <lang id="es" status="auto">&quot;Guía del módulo de automatización en la recogida de datos-SIGAACD&quot;</lang>
+        </row>
+        <row name="PDF.Page[   1].Text[2].Text" status="new">
+          <native>&quot;Junho/2015&quot;</native>
+          <lang id="es" status="auto">&quot;Junio/2015&quot;</lang>
+        </row>
+        <row name="PDF.Page[   2].Frame[3].Hyperlink" status="new">
+          <native>&quot;#Pages[3]&quot;</native>
+          <lang id="es" status="auto">&quot;#Pages [3]&quot;</lang>
+        </row>
+        <row name="PDF.Page[   2].Frame[4].Hyperlink" status="new">
+          <native>&quot;#Pages[3]&quot;</native>
+          <lang id="es" status="auto">&quot;#Pages [3]&quot;</lang>
+        </row>
+        <row name="PDF.Page[   2].Frame[5].Hyperlink" status="new">
+          <native>&quot;#Pages[4]&quot;</native>
+          <lang id="es" status="auto">&quot;#Pages [4]&quot;</lang>
+        </row>
+        <row name="PDF.Page[   2].Frame[6].Hyperlink" status="new">
+          <native>&quot;#Pages[13]&quot;</native>
+          <lang id="es" status="auto">&quot;#Pages [13]&quot;</lang>
+        </row>
+        <row name="PDF.Page[   2].Frame[7].Hyperlink" status="new">
+          <native>&quot;#Pages[18]&quot;</native>
+          <lang id="es" status="auto">&quot;#Pages [18]&quot;</lang>
+        </row>
+        <row name="PDF.Page[   2].Frame[8].Hyperlink" status="new">
+          <native>&quot;#Pages[19]&quot;</native>
+          <lang id="es" status="auto">&quot;#Pages [19]&quot;</lang>
+        </row>
+        <row name="PDF.Page[   2].Frame[9].Hyperlink" status="new">
+          <native>&quot;#Pages[21]&quot;</native>
+          <lang id="es" status="auto">&quot;#Pages [21]&quot;</lang>
+        </row>
+        <row name="PDF.Page[   2].Frame[10].Hyperlink" status="new">
+          <native>&quot;#Pages[26]&quot;</native>
+          <lang id="es" status="auto">&quot;#Pages [26]&quot;</lang>
+        </row>
+        <row name="PDF.Page[   2].Frame[11].Hyperlink" status="new">
+          <native>&quot;#Pages[30]&quot;</native>
+          <lang id="es" status="auto">&quot;#Pages [30]&quot;</lang>
+        </row>
+        <row name="PDF.Page[   2].Frame[12].Hyperlink" status="new">
+          <native>&quot;#Pages[32]&quot;</native>
+          <lang id="es" status="auto">&quot;#Pages [32]&quot;</lang>
+        </row>
+        <row name="PDF.Page[   2].Frame[13].Hyperlink" status="new">
+          <native>&quot;#Pages[36]&quot;</native>
+          <lang id="es" status="auto">&quot;#Pages [36]&quot;</lang>
+        </row>
+        <row name="PDF.Page[   2].Frame[14].Hyperlink" status="new">
+          <native>&quot;#Pages[37]&quot;</native>
+          <lang id="es" status="auto">&quot;#Pages [37]&quot;</lang>
+        </row>
+        <row name="PDF.Page[   2].Frame[15].Hyperlink" status="new">
+          <native>&quot;#Pages[38]&quot;</native>
+          <lang id="es" status="auto">&quot;#Pages [38]&quot;</lang>
+        </row>
+        <row name="PDF.Page[   2].Frame[16].Hyperlink" status="new">
+          <native>&quot;#Pages[41]&quot;</native>
+          <lang id="es" status="auto">&quot;#Pages [41]&quot;</lang>
+        </row>
+        <row name="PDF.Page[   2].Frame[17].Hyperlink" status="new">
+          <native>&quot;#Pages[46]&quot;</native>
+          <lang id="es" status="auto">&quot;#Pages [46]&quot;</lang>
+        </row>
+        <row name="PDF.Page[   2].Frame[18].Hyperlink" status="new">
+          <native>&quot;#Pages[49]&quot;</native>
+          <lang id="es" status="auto">&quot;#Pages [49]&quot;</lang>
+        </row>
+        <row name="PDF.Page[   2].Frame[19].Hyperlink" status="new">
+          <native>&quot;#Pages[53]&quot;</native>
+          <lang id="es" status="auto">&quot;#Pages [53]&quot;</lang>
+        </row>
+        <row name="PDF.Page[   2].Frame[20].Hyperlink" status="new">
+          <native>&quot;#Pages[58]&quot;</native>
+          <lang id="es" status="auto">&quot;#Pages [58]&quot;</lang>
+        </row>
+        <row name="PDF.Page[   2].Frame[21].Hyperlink" status="new">
+          <native>&quot;#Pages[62]&quot;</native>
+          <lang id="es" status="auto">&quot;#Pages [62]&quot;</lang>
+        </row>
+        <row name="PDF.Page[   2].Frame[22].Hyperlink" status="new">
+          <native>&quot;#Pages[66]&quot;</native>
+          <lang id="es" status="auto">&quot;#Pages [66]&quot;</lang>
+        </row>
+        <row name="PDF.Page[   2].Frame[23].Hyperlink" status="new">
+          <native>&quot;#Pages[68]&quot;</native>
+          <lang id="es" status="auto">&quot;#Pages [68]&quot;</lang>
+        </row>
+        <row name="PDF.Page[   2].Frame[24].Hyperlink" status="new">
+          <native>&quot;#Pages[68]&quot;</native>
+          <lang id="es" status="auto">&quot;#Pages [68]&quot;</lang>
+        </row>
+        <row name="PDF.Page[   2].Frame[25].Hyperlink" status="new">
+          <native>&quot;#Pages[69]&quot;</native>
+          <lang id="es" status="auto">&quot;#Pages [69]&quot;</lang>
+        </row>
+        <row name="PDF.Page[   2].Frame[26].Hyperlink" status="new">
+          <native>&quot;#Pages[73]&quot;</native>
+          <lang id="es" status="auto">&quot;#Pages [73]&quot;</lang>
+        </row>
+        <row name="PDF.Page[   2].Frame[27].Hyperlink" status="new">
+          <native>&quot;#Pages[75]&quot;</native>
+          <lang id="es" status="auto">&quot;#Pages [75]&quot;</lang>
+        </row>
+        <row name="PDF.Page[   2].Frame[28].Hyperlink" status="new">
+          <native>&quot;#Pages[78]&quot;</native>
+          <lang id="es" status="auto">&quot;#Pages [78]&quot;</lang>
+        </row>
+        <row name="PDF.Page[   2].Frame[29].Hyperlink" status="new">
+          <native>&quot;#Pages[80]&quot;</native>
+          <lang id="es" status="auto">&quot;#Pages [80]&quot;</lang>
+        </row>
+        <row name="PDF.Page[   2].Frame[30].Hyperlink" status="new">
+          <native>&quot;#Pages[82]&quot;</native>
+          <lang id="es" status="auto">&quot;#Pages [82]&quot;</lang>
+        </row>
+        <row name="PDF.Page[   2].Frame[31].Hyperlink" status="new">
+          <native>&quot;#Pages[84]&quot;</native>
+          <lang id="es" status="auto">&quot;#Pages [84]&quot;</lang>
+        </row>
+        <row name="PDF.Page[   2].Frame[32].Hyperlink" status="new">
+          <native>&quot;#Pages[86]&quot;</native>
+          <lang id="es" status="auto">&quot;#Pages [86]&quot;</lang>
+        </row>
+        <row name="PDF.Page[   2].Frame[33].Hyperlink" status="new">
+          <native>&quot;#Pages[88]&quot;</native>
+          <lang id="es" status="auto">&quot;#Pages [88]&quot;</lang>
+        </row>
+        <row name="PDF.Page[   2].Frame[34].Hyperlink" status="new">
+          <native>&quot;#Pages[93]&quot;</native>
+          <lang id="es" status="auto">&quot;#Pages [93]&quot;</lang>
+        </row>
+        <row name="PDF.Page[   2].Frame[35].Hyperlink" status="new">
+          <native>&quot;#Pages[96]&quot;</native>
+          <lang id="es" status="auto">&quot;#Pages [96]&quot;</lang>
+        </row>
+        <row name="PDF.Page[   2].Text[36].Text" status="new">
+          <native>&quot;1.&quot;</native>
+          <lang id="es" status="auto">&quot;1.&quot;</lang>
+        </row>
+        <row name="PDF.Page[   2].Text[37].Text" status="new">
+          <native>&quot;2.&quot;</native>
+          <lang id="es" status="auto">&quot;2.&quot;</lang>
+        </row>
+        <row name="PDF.Page[   2].Text[38].Text" status="new">
+          <native>&quot;3.&quot;</native>
+          <lang id="es" status="auto">&quot;3.&quot;</lang>
+        </row>
+        <row name="PDF.Page[   2].Text[39].Text" status="new">
+          <native>&quot;4.&quot;</native>
+          <lang id="es" status="auto">&quot;4.&quot;</lang>
+        </row>
+        <row name="PDF.Page[   2].Text[40].Text" status="new">
+          <native>&quot;5.&quot;</native>
+          <lang id="es" status="auto">&quot;5.&quot;</lang>
+        </row>
+        <row name="PDF.Page[   2].Text[41].Text" status="new">
+          <native>&quot;6.&quot;</native>
+          <lang id="es" status="auto">&quot;6.&quot;</lang>
+        </row>
+        <row name="PDF.Page[   2].Text[42].Text" status="new">
+          <native>&quot;7.&quot;</native>
+          <lang id="es" status="auto">&quot;7.&quot;</lang>
+        </row>
+        <row name="PDF.Page[   2].Text[43].Text" status="new">
+          <native>&quot;8.&quot;</native>
+          <lang id="es" status="auto">&quot;8.&quot;</lang>
+        </row>
+        <row name="PDF.Page[   2].Text[44].Text" status="new">
+          <native>&quot;9.&quot;</native>
+          <lang id="es" status="auto">&quot;9.&quot;</lang>
+        </row>
+        <row name="PDF.Page[   2].Text[45].Text" status="new">
+          <native>&quot;Guia do SIGAACD&quot;</native>
+          <lang id="es" status="auto">&quot;Guía de SIGAACD&quot;</lang>
+        </row>
+        <row name="PDF.Page[   2].Text[46].Text" status="new">
+          <native>&quot;2&quot;</native>
+          <lang id="es" status="auto">&quot;2&quot;</lang>
+        </row>
+        <row name="PDF.Page[   2].Text[47].Text" status="new">
+          <native>&quot;Versão 4.0&quot;</native>
+          <lang id="es" status="auto">&quot;Versión 4.0&quot;</lang>
+        </row>
+        <row name="PDF.Page[   2].Text[48].Text" status="new">
+          <native>&quot;Título do documento&quot;</native>
+          <lang id="es" status="auto">&quot;Título del documento&quot;</lang>
+        </row>
+        <row name="PDF.Page[   2].Text[49].Text" status="new">
+          <native>&quot;Sumário&quot;</native>
+          <lang id="es" status="auto">&quot;Contenido&quot;</lang>
+        </row>
+        <row name="PDF.Page[   2].Text[50].Text" status="new">
+          <native>&quot;Introdução ..................................................................................................................................................3 Configurações iniciais ................................................................................................................................3 Como gerar etiquetas de identificação interna? .........................................................................................4 Como configurar por NET USE uma impressora física para impressão em terminais ...............................13 Exemplos do processo de utilização das rotinas do módulo SIGAACD – Materiais ..................................18 Recebimento -&gt; Conferência de pedido de compras (ACDV125)..............................................................19 Recebimento -&gt; Conferência de pré-nota (ACDV120)...............................................................................21 Recebimento -&gt; Conferência de nota fiscal de entrada (ACDV121) ..........................................................26 Recebimento -&gt; Endereçamento (ACDV060) ............................................................................................30&quot;</native>
+          <lang id="es" status="auto">&quot;Introdução .................................................................................................................................................. 3 Configurações iniciais ................................................................................................................................ 3 ¿Cómo generar etiquetas de identificación interna? ......................................................................................... 4 Cómo configurar para el USO de la red de una impresora física para terminales de impresión.............................. 13 ejemplos del proceso de utilizar las rutinas de módulo SIGAACD – materiales................................. Recibir 18-&gt; compras aplicación Conferencia (ACDV125)... 19 recibir-&gt; pré-nota Conferencia (ACDV120)... 21 recibo-&gt; factura Conferencia (ACDV121)... 26 recibir-&gt; direccionamiento (ACDV060)... 30&quot;</lang>
+        </row>
+        <row name="PDF.Page[   2].Text[51].Text" status="new">
+          <native>&quot;10.&quot;</native>
+          <lang id="es" status="auto">&quot;10.&quot;</lang>
+        </row>
+        <row name="PDF.Page[   2].Text[52].Text" status="new">
+          <native>&quot;Recebimento -&gt; Envio CQ (ACDV050) ......................................................................................................32 11.&quot;</native>
+          <lang id="es" status="auto">&quot;Recebimento -&gt; Envio CQ (ACDV050) ...................................................................................................... 32 11.&quot;</lang>
+        </row>
+        <row name="PDF.Page[   2].Text[53].Text" status="new">
+          <native>&quot;12.&quot;</native>
+          <lang id="es" status="auto">&quot;12.&quot;</lang>
+        </row>
+        <row name="PDF.Page[   2].Text[54].Text" status="new">
+          <native>&quot;Recebimento -&gt; Baixa CQ (ACDV010) ......................................................................................................36 Ordens de Separação (ACDA100) .............................................................................................................37&quot;</native>
+          <lang id="es" status="auto">&quot;Recebimento -&gt; Baixa CQ (ACDV010) ...................................................................................................... 36 Ordens de Separação (ACDA100) ............................................................................................................. 37&quot;</lang>
+        </row>
+        <row name="PDF.Page[   2].Text[55].Text" status="new">
+          <native>&quot;13.&quot;</native>
+          <lang id="es" status="auto">&quot;13.&quot;</lang>
+        </row>
+        <row name="PDF.Page[   2].Text[56].Text" status="new">
+          <native>&quot;14.&quot;</native>
+          <lang id="es" status="auto">&quot;14.&quot;</lang>
+        </row>
+        <row name="PDF.Page[   2].Text[57].Text" status="new">
+          <native>&quot;Expedição -&gt; Pré-separação de pedido de venda (ACDV165) ..................................................................38 Expedição -&gt; Separação de pedido de venda (ACDV166) ........................................................................41&quot;</native>
+          <lang id="es" status="auto">&quot;Expedición-&gt; separación previa de orden de venta (ACDV165)... 38-expedición &amp;gt; separación de pedido de ventas (ACDV166)... 41&quot;</lang>
+        </row>
+        <row name="PDF.Page[   2].Text[58].Text" status="new">
+          <native>&quot;15.&quot;</native>
+          <lang id="es" status="auto">&quot;15.&quot;</lang>
+        </row>
+        <row name="PDF.Page[   2].Text[59].Text" status="new">
+          <native>&quot;16.&quot;</native>
+          <lang id="es" status="auto">&quot;16.&quot;</lang>
+        </row>
+        <row name="PDF.Page[   2].Text[60].Text" status="new">
+          <native>&quot;Expedição -&gt; Separação de nota fiscal (ACDV166)...................................................................................46 Expedição -&gt; Separação para Ordem de Produção (ACDV166) ...............................................................49&quot;</native>
+          <lang id="es" status="auto">&quot;Expedición-&gt; separación de recepción (ACDV166)... Expedición 46-&gt; separación por orden de producción (ACDV166)... 49&quot;</lang>
+        </row>
+        <row name="PDF.Page[   2].Text[61].Text" status="new">
+          <native>&quot;17.&quot;</native>
+          <lang id="es" status="auto">&quot;17.&quot;</lang>
+        </row>
+        <row name="PDF.Page[   2].Text[62].Text" status="new">
+          <native>&quot;18.&quot;</native>
+          <lang id="es" status="auto">&quot;18.&quot;</lang>
+        </row>
+        <row name="PDF.Page[   2].Text[63].Text" status="new">
+          <native>&quot;Expedição -&gt; Embalagem (ACDV167).......................................................................................................53&quot;</native>
+          <lang id="es" status="auto">&quot;Expedição -&gt; Embalagem (ACDV167)....................................................................................................... 53&quot;</lang>
+        </row>
+        <row name="PDF.Page[   2].Text[64].Text" status="new">
+          <native>&quot;Expedição -&gt; Geração de Nota de Saída (ACDV168) ...............................................................................58&quot;</native>
+          <lang id="es" status="auto">&quot;Expedición-&gt; generación de nota (ACDV168)... 58&quot;</lang>
+        </row>
+        <row name="PDF.Page[   2].Text[65].Text" status="new">
+          <native>&quot;19.&quot;</native>
+          <lang id="es" status="auto">&quot;19.&quot;</lang>
+        </row>
+        <row name="PDF.Page[   2].Text[66].Text" status="new">
+          <native>&quot;20.&quot;</native>
+          <lang id="es" status="auto">&quot;20.&quot;</lang>
+        </row>
+        <row name="PDF.Page[   2].Text[67].Text" status="new">
+          <native>&quot;Expedição -&gt; Embarque (ACDV175) .........................................................................................................62&quot;</native>
+          <lang id="es" status="auto">&quot;Expedição -&gt; Embarque (ACDV175) ......................................................................................................... 62&quot;</lang>
+        </row>
+        <row name="PDF.Page[   2].Text[68].Text" status="new">
+          <native>&quot;Expedição -&gt; Desfaz Separação (ACDV176) ............................................................................................66&quot;</native>
+          <lang id="es" status="auto">&quot;Expedición-&gt; deshace separación (ACDV176)... 66&quot;</lang>
+        </row>
+        <row name="PDF.Page[   2].Text[69].Text" status="new">
+          <native>&quot;21.&quot;</native>
+          <lang id="es" status="auto">&quot;21.&quot;</lang>
+        </row>
+        <row name="PDF.Page[   2].Text[70].Text" status="new">
+          <native>&quot;22.&quot;</native>
+          <lang id="es" status="auto">&quot;22.&quot;</lang>
+        </row>
+        <row name="PDF.Page[   2].Text[71].Text" status="new">
+          <native>&quot;Expedição -&gt; Embarque Simples (ACDV250)............................................................................................68&quot;</native>
+          <lang id="es" status="auto">&quot;Expedición-&gt; embarque (ACDV250)... 68&quot;</lang>
+        </row>
+        <row name="PDF.Page[   2].Text[72].Text" status="new">
+          <native>&quot;Estoque -&gt; Mestre de Inventário (ACDA035).............................................................................................68&quot;</native>
+          <lang id="es" status="auto">&quot;Acción-&gt; maestro de inventario (ACDA035)... 68&quot;</lang>
+        </row>
+        <row name="PDF.Page[   2].Text[73].Text" status="new">
+          <native>&quot;23.&quot;</native>
+          <lang id="es" status="auto">&quot;23.&quot;</lang>
+        </row>
+        <row name="PDF.Page[   2].Text[74].Text" status="new">
+          <native>&quot;24.&quot;</native>
+          <lang id="es" status="auto">&quot;24.&quot;</lang>
+        </row>
+        <row name="PDF.Page[   2].Text[75].Text" status="new">
+          <native>&quot;Estoque -&gt; Inventário por produto (ACDV035) ..........................................................................................69 Estoque -&gt; Inventário por endereço (ACDV035)........................................................................................73&quot;</native>
+          <lang id="es" status="auto">&quot;Inventario de existencias producto &gt; (ACDV035)... 69-stock inventario dirección &gt; (ACDV035)... 73&quot;</lang>
+        </row>
+        <row name="PDF.Page[   2].Text[76].Text" status="new">
+          <native>&quot;25.&quot;</native>
+          <lang id="es" status="auto">&quot;25.&quot;</lang>
+        </row>
+        <row name="PDF.Page[   2].Text[77].Text" status="new">
+          <native>&quot;26.&quot;</native>
+          <lang id="es" status="auto">&quot;26.&quot;</lang>
+        </row>
+        <row name="PDF.Page[   2].Text[78].Text" status="new">
+          <native>&quot;Estoque -&gt; Movimentação Interna (ACDV130) ..........................................................................................75 Estoque -&gt; Transferência Endereço (ACDV150) .......................................................................................78&quot;</native>
+          <lang id="es" status="auto">&quot;Acción-&gt; unidad interna (ACDV130)... 75-acción &amp;gt; transferencia de dirección (ACDV150)... 78&quot;</lang>
+        </row>
+        <row name="PDF.Page[   2].Text[79].Text" status="new">
+          <native>&quot;27.&quot;</native>
+          <lang id="es" status="auto">&quot;27.&quot;</lang>
+        </row>
+        <row name="PDF.Page[   2].Text[80].Text" status="new">
+          <native>&quot;28.&quot;</native>
+          <lang id="es" status="auto">&quot;28.&quot;</lang>
+        </row>
+        <row name="PDF.Page[   2].Text[81].Text" status="new">
+          <native>&quot;Estoque -&gt; Transferência Armazém (ACDV151) .......................................................................................80 Estoque -&gt; Envio Processo (ACDV152).....................................................................................................82&quot;</native>
+          <lang id="es" status="auto">&quot;Acción-&gt; transferencia de almacén (ACDV151)... Acción 80-&gt; proceso de envío (ACDV152)... 82&quot;</lang>
+        </row>
+        <row name="PDF.Page[   2].Text[82].Text" status="new">
+          <native>&quot;29.&quot;</native>
+          <lang id="es" status="auto">&quot;29.&quot;</lang>
+        </row>
+        <row name="PDF.Page[   2].Text[83].Text" status="new">
+          <native>&quot;30.&quot;</native>
+          <lang id="es" status="auto">&quot;50 h&quot;</lang>
+        </row>
+        <row name="PDF.Page[   2].Text[84].Text" status="new">
+          <native>&quot;Estoque -&gt; Retorno Processo (ACDV153).................................................................................................84&quot;</native>
+          <lang id="es" status="auto">&quot;Acción-&gt; proceso de retorno (ACDV153)... 84&quot;</lang>
+        </row>
+        <row name="PDF.Page[   2].Text[85].Text" status="new">
+          <native>&quot;Produção -&gt; Produção Simples (ACDV020) ..............................................................................................86&quot;</native>
+          <lang id="es" status="auto">&quot;Producción-producción (ACDV020) &amp;gt;... 86&quot;</lang>
+        </row>
+        <row name="PDF.Page[   2].Text[86].Text" status="new">
+          <native>&quot;31.&quot;</native>
+          <lang id="es" status="auto">&quot;31.&quot;</lang>
+        </row>
+        <row name="PDF.Page[   2].Text[87].Text" status="new">
+          <native>&quot;32.&quot;</native>
+          <lang id="es" status="auto">&quot;32.&quot;</lang>
+        </row>
+        <row name="PDF.Page[   2].Text[88].Text" status="new">
+          <native>&quot;Produção -&gt; PCP Mod I (ACDV023) ..........................................................................................................88 Produção -&gt; PCP Mod II (ACDV025) .........................................................................................................93&quot;</native>
+          <lang id="es" status="auto">&quot;Produção -&gt; PCP Mod I (ACDV023) .......................................................................................................... 88 Produção -&gt; PCP Mod II (ACDV025) ......................................................................................................... 93&quot;</lang>
+        </row>
+        <row name="PDF.Page[   2].Text[89].Text" status="new">
+          <native>&quot;33.&quot;</native>
+          <lang id="es" status="auto">&quot;33.&quot;</lang>
+        </row>
+        <row name="PDF.Page[   2].Text[90].Text" status="new">
+          <native>&quot;Produção -&gt; Requisição p/ produção (ACDV040)......................................................................................96&quot;</native>
+          <lang id="es" status="auto">&quot;Producción-&gt; solicitud p/producción (ACDV040)... 96&quot;</lang>
+        </row>
+        <row name="PDF.Page[   3].Text[68].Text" status="new">
+          <native>&quot;1.&quot;</native>
+          <lang id="es" status="auto">&quot;1.&quot;</lang>
+        </row>
+        <row name="PDF.Page[   3].Text[69].Text" status="new">
+          <native>&quot;2.&quot;</native>
+          <lang id="es" status="auto">&quot;2.&quot;</lang>
+        </row>
+        <row name="PDF.Page[   3].Text[70].Text" status="new">
+          <native>&quot;1)&quot;</native>
+          <lang id="es" status="auto">&quot;1)&quot;</lang>
+        </row>
+        <row name="PDF.Page[   3].Text[71].Text" status="new">
+          <native>&quot;2)&quot;</native>
+          <lang id="es" status="auto">&quot;2)&quot;</lang>
+        </row>
+        <row name="PDF.Page[   3].Text[72].Text" status="new">
+          <native>&quot;3)&quot;</native>
+          <lang id="es" status="auto">&quot;3)&quot;</lang>
+        </row>
+        <row name="PDF.Page[   3].Text[73].Text" status="new">
+          <native>&quot;4)&quot;</native>
+          <lang id="es" status="auto">&quot;4)&quot;</lang>
+        </row>
+        <row name="PDF.Page[   3].Text[74].Text" status="new">
+          <native>&quot;3&quot;</native>
+          <lang id="es" status="auto">&quot;3&quot;</lang>
+        </row>
+        <row name="PDF.Page[   3].Text[75].Text" status="new">
+          <native>&quot;Versão 22.0&quot;</native>
+          <lang id="es" status="auto">&quot;versión 22.0&quot;</lang>
+        </row>
+        <row name="PDF.Page[   3].Text[76].Text" status="new">
+          <native>&quot;Guia do SIGAACD&quot;</native>
+          <lang id="es" status="auto">&quot;Guía de SIGAACD&quot;</lang>
+        </row>
+        <row name="PDF.Page[   3].Text[77].Text" status="new">
+          <native>&quot;Introdução&quot;</native>
+          <lang id="es" status="auto">&quot;Introducción&quot;</lang>
+        </row>
+        <row name="PDF.Page[   3].Text[78].Text" status="new">
+          <native>&quot;Este manual tem por objetivo ilustrar os principais processos do módulo Automação em Coleta de Dados – SIGAACD. Ao final do  seu estudo, deverá ser possível realizar as configurações necessárias para se iniciar a utilização do módulo, assim como alguns  detalhes sobre parametrizações e cenários específicos de cada rotina.&quot;</native>
+          <lang id="es" status="auto">&quot;Este manual pretende ilustrar los principales procesos del módulo de automatización en la recopilación de datos-SIGAACD. Al final de su estudio, debe ser posible realizar los ajustes necesarios para comenzar a utilizar el módulo, así como algunos detalles acerca de configuraciones y escenarios específicos de cada rutina.&quot;</lang>
+        </row>
+        <row name="PDF.Page[   3].Text[79].Text" status="new">
+          <native>&quot;Para maiores detalhes sobre o objetivo do módulo, ‘Por que o SIGAACD existe ?’, utilizar a apostila oficial do SIGAACD, disponível  no repositório TFS.&quot;</native>
+          <lang id="es" status="auto">&quot;Para más detalles sobre el propósito del módulo, &apos;¿por qué el SIGAACD existe?&apos;, usando el folleto oficial de SIGAACD, disponible en el TFS almacena.&quot;</lang>
+        </row>
+        <row name="PDF.Page[   3].Text[80].Text" status="new">
+          <native>&quot;Configurações iniciais&quot;</native>
+          <lang id="es" status="auto">&quot;Ajustes iniciales&quot;</lang>
+        </row>
+        <row name="PDF.Page[   3].Text[81].Text" status="new">
+          <native>&quot;Seção no arquivo de configurações iniciais do AppServer (appserver.ini):&quot;</native>
+          <lang id="es" status="auto">&quot;Ajustes iniciales Sección archivo AppServer (appserver.ini):&quot;</lang>
+        </row>
+        <row name="PDF.Page[   3].Text[82].Text" status="new">
+          <native>&quot;[TELNET] &quot;</native>
+          <lang id="es" status="auto">&quot;[TELNET] &quot;</lang>
+        </row>
+        <row name="PDF.Page[   3].Text[83].Text" status="new">
+          <native>&quot;Enable=1 &quot;</native>
+          <lang id="es" status="auto">&quot;Activar = 1 &quot;</lang>
+        </row>
+        <row name="PDF.Page[   3].Text[84].Text" status="new">
+          <native>&quot;Environment=SQL_BRA_POR_ACD&quot;</native>
+          <lang id="es" status="auto">&quot;Medio ambiente = SQL_BRA_POR_ACD&quot;</lang>
+        </row>
+        <row name="PDF.Page[   3].Text[85].Text" status="new">
+          <native>&quot;Main=SIGAACD &quot;</native>
+          <lang id="es" status="auto">&quot;Principal = SIGAACD &quot;</lang>
+        </row>
+        <row name="PDF.Page[   3].Text[86].Text" status="new">
+          <native>&quot;Port=23&quot;</native>
+          <lang id="es" status="auto">&quot;Puerto = 23&quot;</lang>
+        </row>
+        <row name="PDF.Page[   3].Text[87].Text" status="new">
+          <native>&quot;Onde:&quot;</native>
+          <lang id="es" status="auto">&quot;Donde:&quot;</lang>
+        </row>
+        <row name="PDF.Page[   3].Text[88].Text" status="new">
+          <native>&quot;Enable&quot;</native>
+          <lang id="es" status="auto">&quot;Permiten&quot;</lang>
+        </row>
+        <row name="PDF.Page[   3].Text[89].Text" status="new">
+          <native>&quot;Environment&quot;</native>
+          <lang id="es" status="auto">&quot;Medio ambiente&quot;</lang>
+        </row>
+        <row name="PDF.Page[   3].Text[90].Text" status="new">
+          <native>&quot;Ativa/Desativa o serviço do telnet server no protheus Ambiente utilizado para execução da aplicação VT100&quot;</native>
+          <lang id="es" status="auto">&quot;Habilita o deshabilita el servicio del servidor telnet en la ejecución de la aplicación de protheus que para VT100 utiliza el entorno&quot;</lang>
+        </row>
+        <row name="PDF.Page[   3].Text[91].Text" status="new">
+          <native>&quot;Main&quot;</native>
+          <lang id="es" status="auto">&quot;Principal&quot;</lang>
+        </row>
+        <row name="PDF.Page[   3].Text[92].Text" status="new">
+          <native>&quot;Port&quot;</native>
+          <lang id="es" status="auto">&quot;Puerto&quot;</lang>
+        </row>
+        <row name="PDF.Page[   3].Text[93].Text" status="new">
+          <native>&quot;Indica qual será o programa principal a ser executado&quot;</native>
+          <lang id="es" status="auto">&quot;Indica que será el programa principal para ejecutar&quot;</lang>
+        </row>
+        <row name="PDF.Page[   3].Text[94].Text" status="new">
+          <native>&quot;Indica a porta que será usada pelo serviço telnet server (padrão 23)&quot;</native>
+          <lang id="es" status="auto">&quot;Indica el puerto que será utilizado por el servicio de servidor telnet (23)&quot;</lang>
+        </row>
+        <row name="PDF.Page[   3].Text[95].Text" status="new">
+          <native>&quot;MaxRow&quot;</native>
+          <lang id="es" status="auto">&quot;MaxRow&quot;</lang>
+        </row>
+        <row name="PDF.Page[   3].Text[96].Text" status="new">
+          <native>&quot;MaxCol&quot;</native>
+          <lang id="es" status="auto">&quot;MaxCol&quot;</lang>
+        </row>
+        <row name="PDF.Page[   3].Text[97].Text" status="new">
+          <native>&quot;Indica a quantidade de linhas disponíveis para utilização, tendo como default 8 Indica a quantidade de colunas disponíveis para utilização, tendo como default 20.&quot;</native>
+          <lang id="es" status="auto">&quot;Indica que la cantidad de líneas disponibles para su uso, con el valor por defecto 8 indica el número de columnas disponibles para el uso, el valor predeterminado 20.&quot;</lang>
+        </row>
+        <row name="PDF.Page[   3].Text[98].Text" status="new">
+          <native>&quot;InactiveTimeOut&quot;</native>
+          <lang id="es" status="auto">&quot;InactiveTimeOut&quot;</lang>
+        </row>
+        <row name="PDF.Page[   3].Text[99].Text" status="new">
+          <native>&quot;Indica a quantidade de segundos em que irá se desconectar caso esteja com o equipamento  inativo.&quot;</native>
+          <lang id="es" status="auto">&quot;Indica el número de segundos en que se desconecte si inactivo equipo.&quot;</lang>
+        </row>
+        <row name="PDF.Page[   3].Text[100].Text" status="new">
+          <native>&quot;‘&quot;</native>
+          <lang id="es" status="auto">&quot;‘&quot;</lang>
+        </row>
+        <row name="PDF.Page[   3].Text[101].Text" status="new">
+          <native>&quot;Certifique-se de que o arquivo de menu do SIGAACD está dentro do RootPath do ambiente (\System\). O  arquivo segue em anexo junto a este manual ou pode ser obtido junto ao portal do cliente TOTVS.&quot;</native>
+          <lang id="es" status="auto">&quot;Asegúrese de que el archivo de menú de QUE SIGAACD está dentro de la Ruta_raíz del medio ambiente (\System\). Por favor encontrar archivo adjunto junto a este manual o se puede obtener por el portal de cliente TOTVS.&quot;</lang>
+        </row>
+        <row name="PDF.Page[   3].Text[102].Text" status="new">
+          <native>&quot;Parâmetros básicos para ativação de todas as integrações com SIGAACD&quot;</native>
+          <lang id="es" status="auto">&quot;Parámetros básicos para la activación de toda la integración con SIGAACD&quot;</lang>
+        </row>
+        <row name="PDF.Page[   3].Text[103].Text" status="new">
+          <native>&quot;&quot;</native>
+          <lang id="es" status="auto">&quot;&quot;</lang>
+        </row>
+        <row name="PDF.Page[   3].Text[104].Text" status="new">
+          <native>&quot;&quot;</native>
+          <lang id="es" status="auto">&quot;&quot;</lang>
+        </row>
+        <row name="PDF.Page[   3].Text[105].Text" status="new">
+          <native>&quot;MV_INTACD = 1&quot;</native>
+          <lang id="es" status="auto">&quot;MV_INTACD = 1&quot;</lang>
+        </row>
+        <row name="PDF.Page[   3].Text[106].Text" status="new">
+          <native>&quot;MV_CBPE001 até o MV_CBPE023 = .T.&quot;</native>
+          <lang id="es" status="auto">&quot;MV_CBPE001 a la MV_CBPE023 =. T.&quot;</lang>
+        </row>
+        <row name="PDF.Page[   3].Text[107].Text" status="new">
+          <native>&quot;Cadastre um operador para o SIGAACD (ACDA010)&quot;</native>
+          <lang id="es" status="auto">&quot;Registro de operador para el SIGAACD (ACDA010)&quot;</lang>
+        </row>
+      </stringdata>
+      <customdata/>
+    </target>
+  </targets>
+  <bookmarks/>
+  <infos>
+    <info infotype="description"/>
+    <info action="S" datetime="2016-11-16 10:44:57 10:44:57 AM" infotype="">File translated using Translation Wizard</info>
+    <info action="S" datetime="2016-11-16 10:57:16 10:57:16 AM" infotype="">File translated using Translation Wizard</info>
+  </infos>
+  <excludes emptynative="False" userset="False" allowspace="False" internalplaceholders="False" printable="" unprintable="" case-sensitive="False"/>
+  <languages native="en" active="0">
+    <language enabled="True" fallback="">es</language>
+  </languages>
+</xml>
