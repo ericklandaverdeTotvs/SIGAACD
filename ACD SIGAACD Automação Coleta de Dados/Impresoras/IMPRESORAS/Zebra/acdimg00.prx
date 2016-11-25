@@ -11,13 +11,18 @@ Padrao Zebra
 ±±ÈÍÍÍÍÍÍÍÍÍÍÏÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼±±
 ±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±
 ßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßß
+
+No puedo hablar duro eso
 */
 User Function IMG00
 If paramixb[1] =='T_ACDI10PR' .or. paramixb[1] =='T_ACDI10CX' .or. paramixb[1] =='T_ACDI10DE'
 	MSCBBEGIN(1,6) //Inicio da Imagem da Etiqueta
 	MSCBBOX(00,00,76,40,200)
 	MSCBSAY(05,12,'PRODUTO DE :'+mv_par01,"N","0","025,035",.T.)
+
 	MSCBSAY(05,16,Posicione('SB1',1,xFilial("SB1")+mv_par01,"B1_DESC"),"N","0","025,035",.T.)
+	//MSCBSAY(nXmm, nYmm, cTexto, cRotacao, cFonte, cTam, lReverso, lSerial, cIncr, lZerosL, lNoAlltrim)
+
 	MSCBSAY(05,20,'PRODUTO ATE:'+mv_par02,"N","0","025,035",.T.)
 	MSCBSAY(05,24,Posicione('SB1',1,xFilial("SB1")+mv_par02,"B1_DESC"),"N","0","025,035",.T.)
 	MSCBEND()
@@ -82,7 +87,7 @@ ELSEIf paramixb[1] =='T_ACDV040'
 	   MSCBSAY(05,12,'REQUISICAO:',"N","0","025,035",.T.)
 	   If ! Empty(paramixb[3])
 	      MSCBSAY(05,18,'O.P: '+paramixb[3],"N","0","025,035",.T.)
-	   Endif		   		   
+	   EndIf
 	   MSCBEND()
 	Else
 	   MSCBBEGIN(1,6) //Inicio da Imagem da Etiqueta
@@ -90,8 +95,8 @@ ELSEIf paramixb[1] =='T_ACDV040'
 	   MSCBSAY(05,12,'DEVOLUCAO:',"N","0","025,035",.T.)
 	   MSCBEND()
 	Endif   
-ELSEIf paramixb[1] =='T_ACDV170' 	
-   MSCBBEGIN(1,6) //Inicio da Imagem da Etiqueta
+ELSEIf paramixb[1] =='T_ACDV170'
+	MSCBBEGIN(1,6) //Inicio da Imagem da Etiqueta
 	MSCBLineV(01,01,32,300)
 	MSCBSAY(05,12,'EXPEDICAO:',"N","0","025,035",.T.)
 	If ! Empty(paramixb[2])
@@ -101,7 +106,7 @@ ELSEIf paramixb[1] =='T_ACDV170'
 ELSEIf paramixb[1] =='T_ACDV230'
 	MSCBBEGIN(1,6) //Inicio da Imagem da Etiqueta
 	MSCBLineV(01,01,32,300)
-	MSCBSAY(05,12,'PALLET: '+paramixb[2],"N","0","025,035",.T.)		
+	MSCBSAY(05,12,'PALLET: '+paramixb[2],"N","0","025,035",.T.)
 	MSCBEND()
 ElseIf paramixb[1] =='T_ACDI020LO'  // endereco
 	MSCBBEGIN(1,6) //Inicio da Imagem da Etiqueta
@@ -168,4 +173,4 @@ ElseIf paramixb[1] == 'RT_ACDI060US' // transportadora
 	MSCBSAY(05,26,CB0->CB0_CODETI,"N","0","025,035",.T.)
 	MSCBEND()
 EndIf
-Return .t.
+Return .T.
