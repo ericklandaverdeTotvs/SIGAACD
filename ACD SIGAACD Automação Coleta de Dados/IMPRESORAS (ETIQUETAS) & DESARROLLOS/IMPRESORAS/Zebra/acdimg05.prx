@@ -1,4 +1,3 @@
-
 /*
 Padrao Zebra
 ÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜ
@@ -61,22 +60,7 @@ Return sConteudo
 User Function Img05OFI // imagem de etiqueta de volume permanente (OFICIAL)
 Local cId     := CBGrvEti('05',{CB6->CB6_VOLUME,CB6->CB6_PEDIDO})
 Local nTotEti := paramixb[1]
-Local nAtu    := paramixb[2]    
-
-DBSelectArea("SF2")
-DBSetOrder(1)  //F2_FILIAL+F2_DOC+F2_SERIE+F2_CLIENTE+F2_LOJA+F2_FORMUL+F2_TIPO
-DBSeek(xFilial("SF2")+CB6->CB6_NOTA+CB6->CB6_SERIE)
-
-DBSelectArea("SA1")
-DBSetOrder(1)  //A1_FILIAL+A1_COD+A1_LOJA
-DBSeek(xFilial("SA1")+SF2->F2_CLIENTE+SF2->F2_LOJA)
-cNomeCli := SA1->A1_NOME
-
-DBSelectArea("SA4")
-DBSetOrder(1)  //A4_FILIAL+A4_COD
-DBSeek(xFilial("SA1")+SF2->F2_TRANSP)
-cNomTransp := SA4->A4_NOME
-
+Local nAtu    := paramixb[2]
 MSCBBEGIN(1,6)
 MSCBBOX(06,00,06,76)
 MSCBBOX(19,00,19,76)

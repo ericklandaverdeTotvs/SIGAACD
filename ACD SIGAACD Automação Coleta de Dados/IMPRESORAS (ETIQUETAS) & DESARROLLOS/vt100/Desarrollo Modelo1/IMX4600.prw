@@ -5,7 +5,7 @@
 //Versión: 1
 //Fecha de revisión:
 //Descripción: Programa inicial ACD. Crea el entorno de operación.
-
+#INCLUDE 'RWMAKE.CH' 
 #Include "APVT100.ch"
 #Include "Protheus.ch"
 #Include "SIGAACD.ch"

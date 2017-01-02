@@ -1,0 +1,42 @@
+Notas de SIGAACD COSMECO
+1 - Revisicion de documentacion.
+2 - Entrega vs Documento
+3 - Imprimir etiquetas
+4 - Se asigna etique (Cae al almacen 05)
+5 - Mover fisicamente 
+6 - Leer la etiqueta mas ubicacion
+
+7-Movimiento de producto.
+PickList
+-Aunque esten reservados los materiales se puedan mover de ubicacion.
+-Donde se reserva este material, en almacen de material o almacen logistico.
+
+01 Producto disponible. (Liberado).
+05 Calidad.
+06 Muestras de retencion.
+07 Rechazos.
+08 Destruccion.
+09 Proceso.
+	Ubicacion Fabricacion.
+
+8- Pesado de material.
+Etiqueta de devolucion.
+
+
+Proceso produccion para material de empaque.
+	Emitir etiquetas para Granel ó No, No quiero emitir.
+
+
+-Se tranfiere fisicamente los palets
+-Pasa la puerta.
+
+Se puede generar un proces de devolucion.
+
+Proceso de produccion de PT.
+Se emite etiqueta de producto Terminado. (Almacen 09)
+Se tranfiere al almacen logistico.
+Se tranfiere al almecen de caliadad.
+
+Actualmente no se usa la parte de PickList.
+
+Por tarima y no por pedido de venta.

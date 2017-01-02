@@ -13,7 +13,7 @@ Padrao Zebra
 ±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±
 ßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßß
 */
-User Function Img09  // Impressão de etiquetas de códigos de transações
+User Function Img09  // imagem da Transacao da Producao
 Local cCodigo := Alltrim(CBI->CBI_CODIGO)
 Local nCopias := Val(paramixb[1])
 
@@ -32,5 +32,4 @@ MSCBSAY(05,17,CBI->CBI_DESCRI,"N", "0", "020,030")
 MSCBSAYBAR(23,22,cCodigo,"N","MB07",8.36,.F.,.T.,.F.,,2,1,.F.,.F.,"1",.T.)
 MSCBInfoEti("Trans.Producao","30X100")
 MSCBEND()
-
 Return .F.

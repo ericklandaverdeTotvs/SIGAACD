@@ -37,6 +37,7 @@ Local cOrigem  := If(len(paramixb) >=19,paramixb[19],NIL)
 Local cEndereco:= If(len(paramixb) >=20,paramixb[20],NIL)
 Local cPedido  := If(len(paramixb) >=21,paramixb[21],NIL)
 Local nResto   := If(len(paramixb) >=22,paramixb[22],0)
+Local cItNFE   := If(len(paramixb) >=23,paramixb[23],NIL)
 
 cLocOri := If(cLocOri==cArmazem,' ',cLocOri)
 nQtde   := If(nQtde==NIL,SB1->B1_QE,nQtde)
@@ -67,12 +68,13 @@ For nX := 1 to nCopias
 		cOrigem  := CB0->CB0_ORIGEM
 		cEndereco:= CB0->CB0_LOCALI
 		cPedido  := CB0->CB0_PEDCOM
+		cItNFE 	 := CB0->CB0_ITNFE		
 	EndIf
    If nResto > 0 .and. nX==nCopias
       nQtde  := nResto
    EndIf
 	If Usacb0("01")
-		cCodigo := If(cCodID ==NIL,CBGrvEti('01',{SB1->B1_COD,nQtde,cCodSep,cNFEnt,cSeriee,cFornec,cLojafo,cPedido,cEndereco,cArmazem,cOp,cNumSeq,NIL,NIL,NIL,cLote,cSLote,dValid,cCC,cLocOri,NIL,cOPReq,cNumserie,cOrigem}),cCodID)
+		cCodigo := If(cCodID ==NIL,CBGrvEti('01',{SB1->B1_COD,nQtde,cCodSep,cNFEnt,cSeriee,cFornec,cLojafo,cPedido,cEndereco,cArmazem,cOp,cNumSeq,NIL,NIL,NIL,cLote,cSLote,dValid,cCC,cLocOri,NIL,cOPReq,cNumserie,cOrigem,cItNFE}),cCodID)
 	Else
 		cCodigo := SB1->B1_CODBAR
 	EndIf

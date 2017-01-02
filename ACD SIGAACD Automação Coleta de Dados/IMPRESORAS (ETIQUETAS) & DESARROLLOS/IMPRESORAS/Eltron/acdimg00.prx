@@ -13,7 +13,7 @@ Padrao ELTRON
 ßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßß
 */
 User Function IMG00
-If paramixb[1] =='T_ACDI10PR' .or. paramixb[1] =='T_ACDI10CX' .or. paramixb[1] =='T_ACDI10DE'
+If paramixb[1] =='ACDI10PR' .or. paramixb[1] =='ACDI10CX' .or. paramixb[1] =='ACDI10DE'
 	MSCBBEGIN(1,6) //Inicio da Imagem da Etiqueta
 	MSCBBOX(05,02,76,34,20)
 	MSCBSAY(08,05,'PRODUTO DE :'+mv_par01, "N", "4", "1,1",.F.)
@@ -21,7 +21,7 @@ If paramixb[1] =='T_ACDI10PR' .or. paramixb[1] =='T_ACDI10CX' .or. paramixb[1] =
 	MSCBSAY(08,15,'PRODUTO ATE:'+mv_par02, "N", "4", "1,1",.F.)
 	MSCBSAY(08,20,Posicione('SB1',1,xFilial("SB1")+mv_par02,"B1_DESC"), "N", "4", "1,1",.F.)
 	MSCBEND()
-ElseIf paramixb[1] =='T_ACDI070'
+ElseIf paramixb[1] =='ACDI070'
 	MSCBBEGIN(1,6) //Inicio da Imagem da Etiqueta
 	MSCBBOX(05,02,76,34,20)
 	MSCBSAY(08,05, 'RECURSO DE :'+mv_par01,"N","4","1,1",.F.)
@@ -29,7 +29,7 @@ ElseIf paramixb[1] =='T_ACDI070'
 	MSCBSAY(08,15, 'RECURSO ATE:'+mv_par02,"N","4","1,1",.F.)
 	MSCBSAY(08,20,Posicione('SH1',1,xFilial("SH1")+mv_par02,"H1_DESCRI"),"N","4","1,1",.F.)
 	MSCBEND()
-ElseIf paramixb[1] =='T_ACDI080'
+ElseIf paramixb[1] =='ACDI080'
 	MSCBBEGIN(1,6) //Inicio da Imagem da Etiqueta
 	MSCBBOX(05,02,76,34,20)
 	MSCBSAY(08,05, 'TRANSACAO DE :'+mv_par01,"N","4","1,1",.F.)
@@ -37,7 +37,7 @@ ElseIf paramixb[1] =='T_ACDI080'
 	MSCBSAY(08,15, 'TRANSACAO ATE:'+mv_par02,"N","4","1,1",.F.)
 	MSCBSAY(08,20,Posicione('CBI',1,xFilial("CBI")+mv_par02,"CBI_DESCRI"),"N","4","1,1",.F.)
 	MSCBEND()
-ElseIf paramixb[1] =='T_ACDV210' .or. paramixb[1] =='T_ACDV220'
+ElseIf paramixb[1] =='ACDV210' .or. paramixb[1] =='ACDV220'
 	MSCBBEGIN(1,6) //Inicio da Imagem da Etiqueta
 	MSCBBOX(05,02,76,34,20)
 	MSCBSAY(08,05,'PRODUTO DE :'+CB0->CB0_CODPRO,"N","4","1,1",.F.)
@@ -45,7 +45,7 @@ ElseIf paramixb[1] =='T_ACDV210' .or. paramixb[1] =='T_ACDV220'
 	MSCBSAY(08,15, 'PRODUTO ATE:'+CB0->CB0_CODPRO, "N", "4", "1,1",.F.)
 	MSCBSAY(08,20,Posicione('SB1',1,xFilial("SB1")+CB0->CB0_CODPRO,"B1_DESC"),"N","4","1,1",.F.)
 	MSCBEND()
-ElseIf paramixb[1] =='RT_ACDI10PR' .OR. paramixb[1] =='RT_ACDI10CX'
+ElseIf paramixb[1] =='RACDI10PR' .OR. paramixb[1] =='RACDI10CX'
 	MSCBBEGIN(1,6) //Inicio da Imagem da Etiqueta
 	MSCBBOX(05,02,76,34,10)
 	MSCBSAY(08,05,'RE-IMPRESSAO DE ETIQUETA', "N", "4", "1,1",.F.)
@@ -54,21 +54,21 @@ ElseIf paramixb[1] =='RT_ACDI10PR' .OR. paramixb[1] =='RT_ACDI10CX'
 	MSCBSAY(08,20,'DESCRICAO DA BARRA: ', "N", "4", "1,1",.F.)
 	MSCBSAY(08,25,CB0->CB0_CODETI, "N", "4", "1,1",.F.)
 	MSCBEND()
-ElseIf paramixb[1] =='T_ACDI10PD'.OR. paramixb[1] =='T_ACDV125'
+ElseIf paramixb[1] =='ACDI10PD'.OR. paramixb[1] =='ACDV125'
 	MSCBBEGIN(1,6) //Inicio da Imagem da Etiqueta
 	MSCBBOX(05,02,76,34,20)
 	MSCBSAY(08,05,'PEDIDO :'+paramixb[2], "N", "4", "1,1",.F.)
 	MSCBSAY(08,10,'FORNECEDOR:'+paramixb[3], "N", "4", "1,1",.F.)
 	MSCBSAY(08,15,Posicione('SA2',1,xFilial("SA2")+paramixb[3]+paramixb[4],"A2_NREDUZ"), "N", "4", "1,1",.F.)
 	MSCBEND()
-ElseIf paramixb[1] =='T_ACDI10NF' // identificacao de produto
+ElseIf paramixb[1] =='ACDI10NF' // identificacao de produto
 	MSCBBEGIN(1,6) //Inicio da Imagem da Etiqueta
 	MSCBBOX(05,02,76,34,20)
-	MSCBSAY(08,05,'NOTA :'+SF1->F1_DOC+' '+SF1->F1_SERIE, "N", "4", "1,1",.F.)
+	MSCBSAY(08,05,'NOTA :'+SF1->F1_DOC+' '+SF1->&(SerieNfId("SF1",3,"F1_SERIE")), "N", "4", "1,1",.F.)
 	MSCBSAY(08,10,'FORNECEDOR:'+SF1->F1_FORNECE, "N", "4", "1,1",.F.)
 	MSCBSAY(08,15,Posicione('SA2',1,xFilial("SA2")+SF1->F1_FORNECE+SF1->F1_LOJA,"A2_NREDUZ"), "N", "4", "1,1",.F.)
 	MSCBEND()
-ELSEIf paramixb[1] =='T_ACDI10OP' .OR. paramixb[1] =='T_ACDV025'
+ELSEIf paramixb[1] =='ACDI10OP' .OR. paramixb[1] =='ACDV025'
 	MSCBBEGIN(1,6) //Inicio da Imagem da Etiqueta
 	MSCBBOX(05,02,76,34,20)
 	MSCBSAY(08,05,'PRODUTO  :'+SD3->D3_COD, "N", "4", "1,1",.F.)
@@ -76,7 +76,7 @@ ELSEIf paramixb[1] =='T_ACDI10OP' .OR. paramixb[1] =='T_ACDV025'
 	MSCBSAY(08,15,'DOCUMENTO:'+SD3->D3_DOC, "N", "4", "1,1",.F.)
 	MSCBSAYBAR(28,20,SD3->D3_DOC,'N',"MB07",06,.T.,,,,2,2,,,,)
 	MSCBEND()
-ELSEIf paramixb[1] =='T_ACDV040' 
+ELSEIf paramixb[1] =='ACDV040' 
 	If Posicione('SF5',1,xFilial("SF5")+paramixb[2],"F5_TIPO")=="R"
 	   MSCBBEGIN(1,6) //Inicio da Imagem da Etiqueta		   		   		   
 	   MSCBLineV(01,01,32,300)
@@ -91,7 +91,7 @@ ELSEIf paramixb[1] =='T_ACDV040'
 		MSCBSAY(08,05,'DEVOLUCAO:',"N", "4", "1,1",.F.)			
 	   MSCBEND()			
 	Endif   
-ELSEIf paramixb[1] =='T_ACDV170' 	
+ELSEIf paramixb[1] =='ACDV170' 	
    MSCBBEGIN(1,6) //Inicio da Imagem da Etiqueta		   		   		   
 	MSCBLineV(01,01,32,300)
 	MSCBSAY(08,05,'EXPEDICAO:',"N", "4", "1,1",.F.)
@@ -99,12 +99,12 @@ ELSEIf paramixb[1] =='T_ACDV170'
 	   MSCBSAY(08,10,'ORDEM DE SEP: '+paramixb[2], "N", "2", "2,2",.T.)				
 	Endif
 	MSCBEND()			
-ELSEIf paramixb[1] =='T_ACDV230'
+ELSEIf paramixb[1] =='ACDV230'
 	MSCBBEGIN(1,6) //Inicio da Imagem da Etiqueta
 	MSCBLineV(01,01,32,300)
 	MSCBSAY(08,05,'PALLET: '+paramixb[2], "N", "4", "1,1",.F.)		
 	MSCBEND()
-ElseIf paramixb[1] =='T_ACDI020LO'  // endereco
+ElseIf paramixb[1] =='ACDI020LO'  // endereco
 	MSCBBEGIN(1,6) //Inicio da Imagem da Etiqueta
 	MSCBBOX(05,02,76,34,20)
 	MSCBSAY(08,05,'Almox de :'+mv_par01, "N", "4", "1,1",.F.)
@@ -112,7 +112,7 @@ ElseIf paramixb[1] =='T_ACDI020LO'  // endereco
 	MSCBSAY(08,15,'Endereco de :'+mv_par03, "N", "4", "1,1",.F.)
 	MSCBSAY(08,20,'Endereco ate:'+mv_par04, "N", "4", "1,1",.F.)
 	MSCBEND()
-ElseIf paramixb[1] =='RT_ACDI020LO'  // endereco
+ElseIf paramixb[1] =='RACDI020LO'  // endereco
 	MSCBBEGIN(1,6) //Inicio da Imagem da Etiqueta
 	MSCBBOX(05,02,76,34,20)
 	MSCBSAY(08,05,'RE-IMPRESSAO DE ETIQUETA', "N", "4", "1,1",.F.)
@@ -120,13 +120,13 @@ ElseIf paramixb[1] =='RT_ACDI020LO'  // endereco
 	MSCBSAY(08,15,'DESCRICAO DA BARRA: ', "N", "4", "1,1",.F.)
 	MSCBSAY(08,20,CB0->CB0_CODETI, "N", "4", "1,1",.F.)
 	MSCBEND()
-ElseIf paramixb[1] == 'T_ACDI030DM'  // dispositivo de movimentacao
+ElseIf paramixb[1] == 'ACDI030DM'  // dispositivo de movimentacao
 	MSCBBEGIN(1,6) //Inicio da Imagem da Etiqueta
 	MSCBBOX(05,02,76,34,20)
 	MSCBSAY(08,10,'Dispositivo de :'+paramixb[2], "N", "4", "1,1",.F.)
 	MSCBSAY(08,15,'Dispositivo ate:'+paramixb[3], "N", "4", "1,1",.F.)
 	MSCBEND()
-ElseIf paramixb[1] == 'RT_ACDI030DM'  // dispositivo de movimentacao
+ElseIf paramixb[1] == 'RACDI030DM'  // dispositivo de movimentacao
 	MSCBBEGIN(1,6) //Inicio da Imagem da Etiqueta
 	MSCBBOX(05,02,76,34,20)
 	MSCBSAY(08,05,'RE-IMPRESSAO DE ETIQUETA', "N", "4", "1,1",.F.)
@@ -134,7 +134,7 @@ ElseIf paramixb[1] == 'RT_ACDI030DM'  // dispositivo de movimentacao
 	MSCBSAY(08,15,'DESCRICAO DA BARRA: ', "N", "4", "1,1",.F.)
 	MSCBSAY(08,20,CB0->CB0_CODETI, "N", "4", "1,1",.F.)
 	MSCBEND()
-ElseIf paramixb[1] == 'T_ACDI050TR' // transportadora
+ElseIf paramixb[1] == 'ACDI050TR' // transportadora
 	MSCBBEGIN(1,6) //Inicio da Imagem da Etiqueta
 	MSCBBOX(05,02,76,34,20)
 	MSCBSAY(08,05,'Transportadora de :'+paramixb[2], "N", "4", "1,1",.F.)
@@ -142,7 +142,7 @@ ElseIf paramixb[1] == 'T_ACDI050TR' // transportadora
 	MSCBSAY(08,15,'Transportadora ate:'+paramixb[3], "N", "4", "1,1",.F.)
 	MSCBSAY(08,20,Posicione('SA4',1,xFilial("SA4")+paramixb[3],"A4_NOME"), "N", "4", "1,1",.F.)
 	MSCBEND()
-ElseIf paramixb[1] == 'RT_ACDI050TR' // transportadora
+ElseIf paramixb[1] == 'RACDI050TR' // transportadora
 	MSCBBEGIN(1,6) //Inicio da Imagem da Etiqueta
 	MSCBBOX(05,02,76,34,10)
 	MSCBSAY(08,05,'RE-IMPRESSAO DE ETIQUETA', "N", "4", "1,1",.F.)
@@ -151,7 +151,7 @@ ElseIf paramixb[1] == 'RT_ACDI050TR' // transportadora
 	MSCBSAY(08,20,'DESCRICAO DA BARRA: ', "N", "4", "1,1",.F.)
 	MSCBSAY(08,25,CB0->CB0_CODETI, "N", "4", "1,1",.F.)
 	MSCBEND()
-ElseIf paramixb[1] == 'T_ACDI060US' // OPERADOR (USUARIO)
+ElseIf paramixb[1] == 'ACDI060US' // OPERADOR (USUARIO)
 	MSCBBEGIN(1,6) //Inicio da Imagem da Etiqueta
 	MSCBBOX(05,02,76,34,20)
 	MSCBSAY(08,05,'Operador de :'+paramixb[2], "N", "4", "1,1",.F.)
@@ -159,7 +159,7 @@ ElseIf paramixb[1] == 'T_ACDI060US' // OPERADOR (USUARIO)
 	MSCBSAY(08,15,'Operador ate:'+paramixb[3], "N", "4", "1,1",.F.)
 	MSCBSAY(08,20,Posicione('CB1',1,xFilial("CB1")+paramixb[3],"CB1_NOME"), "N", "4", "1,1",.F.)
 	MSCBEND()
-ElseIf paramixb[1] == 'RT_ACDI060US' // transportadora
+ElseIf paramixb[1] == 'RACDI060US' // transportadora
 	MSCBBEGIN(1,6) //Inicio da Imagem da Etiqueta
 	MSCBBOX(05,02,76,34,10)
 	MSCBSAY(08,05,'RE-IMPRESSAO DE ETIQUETA', "N", "4", "1,1",.F.)

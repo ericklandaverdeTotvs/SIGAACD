@@ -20,7 +20,6 @@ Local cSerie  := paramixb[3]
 Local cForn   := paramixb[4]
 Local cLoja  := paramixb[5]
 Local cID
-Local nX
 Local sConteudo
 IF UsaCB0("07")
 	cID := CBGrvEti('07',{cVolume,cNota,cSerie,cForn,cLoja})

@@ -1,0 +1,266 @@
+[DPI=200 WIDTH=2 OFFSET=400 TYPE=ZPL]
+~SD000
+^XA
+^LH0,0
+^PR%speed%
+^MD%darkness%
+>>^FO8,[24]^BY3^BCN,80,Y,N,N^FDABCDE^FS
+>>^FO320,[24]^BY3^BCR,80,Y,N,N^FDABCDEFG^FS
+>>^FO16,[160]^A0N,40,40^FDIdentifier:^FS
+>>^FO200,[160]^A0N,40,40^FD%reference%^FS
+>>^FO16,[230]^A0N,40,40^FDDarkness:^FS
+>>^FO200,[230]^A0N,40,40^FD%darknessr%^FS
+>>^FO16,[300]^A0N,40,40^FDSpeed:^FS
+>>^FO200,[300]^A0N,40,40^FD%speedr%^FS
+^PQ1,0,1,Y
+^XZ
+[END]
+
+[DPI=200 WIDTH=4 OFFSET=400 TYPE=ZPL]
+~SD000
+^XA
+^LH0,0
+^PR%speed%
+^MD%darkness%
+>>^FO86,[24]^BY4^BCN,80,Y,N,N^FDABCDEFG^FS
+>>^FO580,[24]^BY3^BCR,160,Y,N,N^FDABCDEFG^FS
+>>^FO60,[160]^A0N,40,40^FDIdentifier:^FS
+>>^FO256,[160]^A0N,60,60^FD%reference%^FS
+>>^FO60,[230]^A0N,40,40^FDDarkness:^FS
+>>^FO256,[230]^A0N,60,60^FD%darknessr%^FS
+>>^FO60,[300]^A0N,40,40^FDSpeed:^FS
+>>^FO256,[300]^A0N,60,60^FD%speedr%^FS
+^PQ1,0,1,Y
+^XZ
+[END]
+ 
+[DPI=200 WIDTH=6 OFFSET=400 TYPE=ZPL]
+~SD000
+^XA
+^LH0,0
+^PR%speed%
+^MD%darkness%
+>>^FO86,[24]^BY4^BCN,80,Y,N,N^FDABCDEFG^FS
+>>^FO580,[24]^BY3^BCR,160,Y,N,N^FDABCDEFG^FS
+>>^FO60,[160]^A0N,40,40^FDIdentifier:^FS
+>>^FO256,[160]^A0N,60,60^FD%reference%^FS
+>>^FO60,[230]^A0N,40,40^FDDarkness:^FS
+>>^FO256,[230]^A0N,60,60^FD%darknessr%^FS
+>>^FO60,[300]^A0N,40,40^FDSpeed:^FS
+>>^FO256,[300]^A0N,60,60^FD%speedr%^FS
+^PQ1,0,1,Y
+^XZ
+[END]
+ 
+[DPI=200 WIDTH=8 OFFSET=400 TYPE=ZPL]
+~SD000
+^XA
+^LH0,0
+^PR%speed%
+^MD%darkness%
+>>^FO86,[24]^BY4^BCN,80,Y,N,N^FDABCDEFG^FS
+>>^FO580,[24]^BY3^BCR,160,Y,N,N^FDABCDEFG^FS
+>>^FO60,[160]^A0N,40,40^FDIdentifier:^FS
+>>^FO256,[160]^A0N,60,60^FD%reference%^FS
+>>^FO60,[230]^A0N,40,40^FDDarkness:^FS
+>>^FO256,[230]^A0N,60,60^FD%darknessr%^FS
+>>^FO60,[300]^A0N,40,40^FDSpeed:^FS
+>>^FO256,[300]^A0N,60,60^FD%speedr%^FS
+>>^FO894,[24]^BY4^BCN,80,Y,N,N^FDABCDEFG^FS
+>>^FO1388,[24]^BY3^BCR,160,Y,N,N^FDABCDEFG^FS
+>>^FO868,[160]^A0N,40,40^FDIdentifier:^FS
+>>^FO1064,[160]^A0N,60,60^FD%reference%^FS
+>>^FO868,[230]^A0N,40,40^FDDarkness:^FS
+>>^FO1064,[230]^A0N,60,60^FD%darknessr%^FS
+>>^FO868,[300]^A0N,40,40^FDSpeed:^FS
+>>^FO1064,[300]^A0N,60,60^FD%speedr%^FS
+^PQ1,0,1,Y
+^XZ
+[END]
+
+[DPI=300 WIDTH=2 OFFSET=600 TYPE=ZPL]
+~SD000
+^XA
+^LH0,0
+^PR%speed%
+^MD%darkness%
+>>^FO36,[36]^BY3^BCN,120,Y,N,N^FDABCDEFG^FS
+>>^FO500,[36]^BY3^BCR,120,Y,N,N^FDABCDEFGHI^FS
+>>^FO36,[240]^A0N,60,60^FDIdentifier:^FS
+>>^FO330,[240]^A0N,90,90^FD%reference%^FS
+>>^FO36,[345]^A0N,60,60^FDDarkness:^FS
+>>^FO330,[345]^A0N,90,90^FD%darknessr%^FS
+>>^FO36,[450]^A0N,60,60^FDSpeed:^FS
+>>^FO330,[450]^A0N,90,90^FD%speedr%^FS
+^PQ1,0,1,Y
+^XZ
+[END]
+ 
+[DPI=300 WIDTH=4 OFFSET=600 TYPE=ZPL]
+~SD000
+^XA
+^LH0,0
+^PR%speed%
+^MD%darkness%
+>>^FO86,[36]^BY4^BCN,120,Y,N,N^FDABCDEFGHI^FS
+>>^FO900,[36]^BY4^BCR,240,Y,N,N^FDABCDEFGHI^FS
+>>^FO90,[240]^A0N,60,60^FDIdentifier:^FS
+>>^FO384,[240]^A0N,90,90^FD%reference%^FS
+>>^FO90,[345]^A0N,60,60^FDDarkness:^FS
+>>^FO384,[345]^A0N,90,90^FD%darknessr%^FS
+>>^FO90,[450]^A0N,60,60^FDSpeed:^FS
+>>^FO384,[450]^A0N,90,90^FD%speedr%^FS
+^PQ1,0,1,Y
+^XZ
+[END]
+
+[DPI=300 WIDTH=6 OFFSET=600 TYPE=ZPL]
+~SD000
+^XA
+^LH0,0
+^PR%speed%
+^MD%darkness%
+>>^FO86,[36]^BY4^BCN,120,Y,N,N^FDABCDEFG^FS
+>>^FO600,[36]^BY4^BCR,240,Y,N,N^FDABCDEFGHI^FS
+>>^FO90,[240]^A0N,60,60^FDIdentifier:^FS
+>>^FO384,[240]^A0N,90,90^FD%reference%^FS
+>>^FO90,[345]^A0N,60,60^FDDarkness:^FS
+>>^FO384,[345]^A0N,90,90^FD%darknessr%^FS
+>>^FO90,[450]^A0N,60,60^FDSpeed:^FS
+>>^FO384,[450]^A0N,90,90^FD%speedr%^FS
+>>^FO986,[36]^BY4^BCN,120,Y,N,N^FDABCDEFG^FS
+>>^FO1500,[36]^BY4^BCR,240,Y,N,N^FDABCDEFGHI^FS
+>>^FO990,[240]^A0N,60,60^FDIdentifier:^FS
+>>^FO1284,[240]^A0N,90,90^FD%reference%^FS
+>>^FO990,[345]^A0N,60,60^FDDarkness:^FS
+>>^FO1284,[345]^A0N,90,90^FD%darknessr%^FS
+>>^FO990,[450]^A0N,60,60^FDSpeed:^FS
+>>^FO1284,[450]^A0N,90,90^FD%speedr%^FS
+^PQ1,0,1,Y
+^XZ
+[END]
+ 
+[DPI=300 WIDTH=8 OFFSET=600 TYPE=ZPL]
+~SD000
+^XA
+^LH0,0
+^PR%speed%
+^MD%darkness%
+>>^FO86,[36]^BY4^BCN,120,Y,N,N^FDABCDEFGHI^FS
+>>^FO900,[36]^BY4^BCR,240,Y,N,N^FDABCDEFGHI^FS
+>>^FO90,[240]^A0N,60,60^FDIdentifier:^FS
+>>^FO384,[240]^A0N,90,90^FD%reference%^FS
+>>^FO90,[345]^A0N,60,60^FDDarkness:^FS
+>>^FO384,[345]^A0N,90,90^FD%darknessr%^FS
+>>^FO90,[450]^A0N,60,60^FDSpeed:^FS
+>>^FO384,[450]^A0N,90,90^FD%speedr%^FS
+>>^FO1298,[36]^BY4^BCN,120,Y,N,N^FDABCDEFGHI^FS
+>>^FO2112,[36]^BY4^BCR,240,Y,N,N^FDABCDEFGHI^FS
+>>^FO1302,[240]^A0N,60,60^FDIdentifier:^FS
+>>^FO1596,[240]^A0N,90,90^FD%reference%^FS
+>>^FO1302,[345]^A0N,60,60^FDDarkness:^FS
+>>^FO1596,[345]^A0N,90,90^FD%darknessr%^FS
+>>^FO1302,[450]^A0N,60,60^FDSpeed:^FS
+>>^FO1596,[450]^A0N,90,90^FD%speedr%^FS
+^PQ1,0,1,Y
+^XZ
+[END]
+
+[DPI=600 WIDTH=2 OFFSET=1200 TYPE=ZPL]
+~SD000
+^XA
+^LH0,0
+^PR%speed%
+^MD%darkness%
+>>^FO72,[72]^BY6^BCN,240,Y,N,N^FDABCDEFG^FS
+>>^FO1000,[72]^BY6^BCR,240,Y,N,N^FDABCDEFGHI^FS
+>>^FO72,[480]^A0N,120,120^FDIdentifier:^FS
+>>^FO660,[480]^A0N,180,180^FD%reference%^FS
+>>^FO72,[690]^A0N,120,120^FDDarkness:^FS
+>>^FO660,[690]^A0N,180,180^FD%darknessr%^FS
+>>^FO72,[900]^A0N,120,120^FDSpeed:^FS
+>>^FO660,[900]^A0N,180,180^FD%speedr%^FS
+^PQ1,0,1,Y
+^XZ
+[END]
+ 
+[DPI=600 WIDTH=4 OFFSET=1264 TYPE=ZPL]
+~SD000
+^XA
+^LH0,0
+^PR%speed%
+^MD%darkness%
+>>^FO172,[72]^BY8^BCN,240,Y,N,N^FDABCDEFGHI^FS
+>>^FO1800,[72]^BY8^BCR,480,Y,N,N^FDABCDEFGHI^FS
+>>^FO180,[480]^A0N,160,160^FDIdentifier:^FS
+>>^FO1010,[480]^A0N,220,220^FD%reference%^FS
+>>^FO180,[690]^A0N,160,160^FDDarkness:^FS
+>>^FO1010,[690]^A0N,220,220^FD%darknessr%^FS
+>>^FO180,[900]^A0N,160,160^FDSpeed:^FS
+>>^FO1010,[900]^A0N,220,220^FD%speedr%^FS
+^PQ1,0,1,Y
+^XZ
+[END]
+
+[DPI=200 WIDTH=2 OFFSET=410 TYPE=EPL]
+S%speed%
+D%darkness%
+N
+>>B32,[388],3,1,4,12,54,B,"ABCDE"
+>>B593,[389],2,1,4,12,54,B,"ABCDE"
+>>A500,[144],2,1,8,8,N,"%reference%"
+>>A370,[252],2,2,2,2,N,"%darknessr%"
+>>A440,[288],2,2,2,2,N,"%speedr%"
+>>A593,[252],2,2,2,2,N,"Darkness:"
+>>A593,[289],2,2,2,2,N,"Speed:"
+>>A591,[214],2,2,4,4,N,"Reference"
+P1
+[END]
+
+[DPI=200 WIDTH=4 OFFSET=410 TYPE=EPL]
+S%speed%
+D%darkness%
+N
+>>B32,[388],3,1,4,12,54,B,"ABCDE"
+>>B593,[389],2,1,4,12,54,B,"ABCDE"
+>>A500,[144],2,1,8,8,N,"%reference%"
+>>A370,[252],2,2,2,2,N,"%darknessr%"
+>>A440,[288],2,2,2,2,N,"%speedr%"
+>>A593,[252],2,2,2,2,N,"Darkness:"
+>>A593,[289],2,2,2,2,N,"Speed:"
+>>A591,[214],2,2,4,4,N,"Reference"
+P1
+[END]
+
+[DPI=200 WIDTH=2 OFFSET=400 TYPE=CPCL]
+! 0 200 200 %height% 1
+TONE %darkness%
+SPEED %speed%
+>>T 5 2 14 [297] Speed:
+>>T 5 2 14 [240] Darkness:
+>>T 5 2 14 [176] Identifier:
+>>BT 7 0 3
+>>B 128 2 30 81 7 [10] ABCDE
+>>BT 7 0 3
+>>VB 128 2 30 81 292 [346] ABCDEFG
+>>T 5 2 204 [174] %reference%
+>>T 5 2 204 [239] %darknessr%
+>>T 5 2 204 [296] %speedr%
+PRINT
+[END]
+
+[DPI=200 WIDTH=4 OFFSET=400 TYPE=CPCL]
+! 0 200 200 %height% 1
+TONE %darkness%
+SPEED %speed%
+>>T 4 0 44 [310] Speed:
+>>T 4 0 44 [253] Darkness:
+>>T 4 0 44 [189] Identifier:
+>>BT 7 2 6
+>>B 128 3 30 81 38 [14] ABCDEFG
+>>VB 128 2 30 162 580 [360] ABCDEFG
+>>T 4 0 292 [189] %reference%
+>>T 4 0 292 [253] %darknessr%
+>>T 4 0 292 [310] %speedr%
+PRINT
+[END]

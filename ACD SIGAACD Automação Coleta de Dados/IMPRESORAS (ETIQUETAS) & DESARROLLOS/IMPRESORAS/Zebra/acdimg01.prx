@@ -13,7 +13,7 @@ Padrao Zebra
 ±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±
 ßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßß
 */
-User Function Img01 //Identificacao de produto ZDesignerZM600
+User Function Img01 //Identificacao de produto
 Local cCodigo,sConteudo,cTipoBar, nX
 Local nqtde 	:= If(len(paramixb) >= 1,paramixb[ 1],NIL)
 Local cCodSep 	:= If(len(paramixb) >= 2,paramixb[ 2],NIL)
@@ -37,6 +37,7 @@ Local cOrigem  := If(len(paramixb) >=19,paramixb[19],NIL)
 Local cEndereco:= If(len(paramixb) >=20,paramixb[20],NIL)
 Local cPedido  := If(len(paramixb) >=21,paramixb[21],NIL)
 Local nResto   := If(len(paramixb) >=22,paramixb[22],0)
+Local cItNFE   := If(len(paramixb) >=23,paramixb[23],NIL)
 
 cLocOri := If(cLocOri==cArmazem,' ',cLocOri)
 nQtde   := If(nQtde==NIL,SB1->B1_QE,nQtde)
@@ -63,25 +64,26 @@ For nX := 1 to nCopias
 		cCC      := CB0->CB0_CC
 		cLocOri  := CB0->CB0_LOCORI
 		cOPReq	:= CB0->CB0_OPREQ
-		cNumserie:= CB0->CB0_NUMSER
+		cNumserie:= CB0->CB0_NUMSER		
 		cOrigem  := CB0->CB0_ORIGEM
 		cEndereco:= CB0->CB0_LOCALI
 		cPedido  := CB0->CB0_PEDCOM
+		cItNFE 	 := CB0->CB0_ITNFE
 	EndIf
    If nResto > 0 .and. nX==nCopias
       nQtde  := nResto
    EndIf
 	If Usacb0("01")
-		cCodigo := If(cCodID ==NIL,CBGrvEti('01',{SB1->B1_COD,nQtde,cCodSep,cNFEnt,cSeriee,cFornec,cLojafo,cPedido,cEndereco,cArmazem,cOp,cNumSeq,NIL,NIL,NIL,cLote,cSLote,dValid,cCC,cLocOri,NIL,cOPReq,cNumserie,cOrigem}),cCodID)
+		cCodigo := If(cCodID ==NIL,CBGrvEti('01',{SB1->B1_COD,nQtde,cCodSep,cNFEnt,cSeriee,cFornec,cLojafo,cPedido,cEndereco,cArmazem,cOp,cNumSeq,NIL,NIL,NIL,cLote,cSLote,dValid,cCC,cLocOri,NIL,cOPReq,cNumserie,cOrigem,cItNFE}),cCodID)
 	Else
 		cCodigo := SB1->B1_CODBAR
 	EndIf
-	//cCodigo := Alltrim(cCodigo)
+	cCodigo := Alltrim(cCodigo)
 	cTipoBar := 'MB07' //128
 	If ! Usacb0("01")
-		If Len(Alltrim(cCodigo)) == 8
+		If Len(cCodigo) == 8
 			cTipoBar := 'MB03'
-		ElseIf Len(Alltrim(cCodigo)) == 13
+		ElseIf Len(cCodigo) == 13
 			cTipoBar := 'MB04'
 		EndIf
 	EndIf
@@ -97,13 +99,10 @@ For nX := 1 to nCopias
 	MSCBSAY(33,08, AllTrim(SB1->B1_COD), "N", "0", "032,035")
 	MSCBSAY(05,14,"DESCRICAO","N","A","012,008")
 	MSCBSAY(05,16,SB1->B1_DESC,"N", "0", "020,030")
-	If !Empty(cLote)
-	   MSCBSAY(05,18,"Lote "+cLote+'-'+cSLote, "N", "0", "020,030")
-   	   MSCBSAYBAR(23,22,cCodigo+cLote,"N",cTipoBar,8.36,.F.,.T.,.F.,,2,1,.F.,.F.,"1",.T.)
-	Else
-   	   MSCBSAYBAR(23,22,cCodigo,"N",cTipoBar,8.36,.F.,.T.,.F.,,2,1,.F.,.F.,"1",.T.)
+	If ! Empty(cLote)
+		MSCBSAY(05,18,"Lote "+cLote+'-'+cSLote, "N", "0", "020,030")
 	EndIf
-	
+	MSCBSAYBAR(23,22,cCodigo,"N",cTipoBar,8.36,.F.,.T.,.F.,,2,1,.F.,.F.,"1",.T.)
 	MSCBInfoEti("Produto","30X100")
 	sConteudo:=MSCBEND()
 	If Type('cProgImp')=="C" .and. cProgImp=="ACDV120"
@@ -153,7 +152,7 @@ For nX := 1 to nCopias
 			cTipoBar := 'MB04'
 		EndIf
 	EndIf
-	MSCBLOADGRF("logoFac.jpg")
+	MSCBLOADGRF("SIGA.GRF")
 	MSCBBEGIN(1,6)
 	MSCBBOX(30,05,76,05)
 	MSCBBOX(02,12.7,76,12.7)
